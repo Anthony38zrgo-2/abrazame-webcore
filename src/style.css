@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+body {
+    background:
+        url('/textures/stardust.png'),
+        linear-gradient(to bottom, #00113d, #000000);
+
+    font-family: "VT323", monospace;
+    overflow-x: hidden;
+    image-rendering: pixelated;
+}
+
+.window {
+    border: 3px solid #d4d0c8;
+    background: #c0c0c0;
+    box-shadow:
+        inset -2px -2px 0 #808080,
+        inset 2px 2px 0 #ffffff,
+        5px 5px 0 #000000;
+}
+
+.titlebar {
+    background: linear-gradient(to right, #000080, #1084d0);
+}

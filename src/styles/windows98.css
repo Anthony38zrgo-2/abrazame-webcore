@@ -1,0 +1,49 @@
+.win98-window {
+    background: #c0c0c0;
+
+    border-top: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+
+    border-right: 3px solid #404040;
+    border-bottom: 3px solid #404040;
+
+    box-shadow:
+        inset -1px -1px 0 #808080,
+        inset 1px 1px 0 #dfdfdf;
+}
+
+.win98-titlebar {
+    background: linear-gradient(to right, #000080, #1084d0);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 4px 8px;
+
+    font-size: 24px;
+}
+
+.win98-title-buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.win98-button {
+    width: 18px;
+    height: 18px;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+}
+
+.win98-panel {
+    background: #d4d0c8;
+}

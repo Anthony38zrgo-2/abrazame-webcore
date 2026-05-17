@@ -1,0 +1,61 @@
+
+.cross-rain {
+    position: absolute;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+.cross-rain span {
+    position: absolute;
+
+    top: -10%;
+
+    user-select: none;
+
+    color: rgba(255, 110, 110, 0.82);
+
+    text-shadow:
+        0 0 8px rgba(255, 0, 0, 0.75),
+        0 0 16px rgba(255, 0, 0, 0.45),
+        0 0 24px rgba(255, 40, 40, 0.30);
+
+    animation-name: crossRain;
+
+    animation-timing-function: linear;
+
+    animation-iteration-count: infinite;
+}
+
+@keyframes crossRain {
+    from {
+        transform:
+            translateY(-120px)
+            translateX(0px)
+            rotate(-18deg);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.82;
+    }
+
+    90% {
+        opacity: 0.82;
+    }
+
+    to {
+        transform:
+            translateY(120vh)
+            translateX(-60px)
+            rotate(-18deg);
+
+        opacity: 0;
+    }
+}

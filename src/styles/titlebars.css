@@ -1,0 +1,123 @@
+/* =======================================================
+   WEBCORE / WIN98 TITLEBAR THEMES
+======================================================= */
+
+/* Default Windows 98 System */
+.win98-titlebar-system {
+    background:
+        linear-gradient(
+            to right,
+            #000080,
+            #1084d0
+        );
+}
+
+/* Story / Chapters */
+.win98-titlebar-story {
+    background:
+        linear-gradient(
+            to right,
+            #02006b,
+            #0060b8
+        );
+}
+
+/* Deep Melancholic Variant */
+.win98-titlebar-melancholy {
+    background:
+        linear-gradient(
+            to right,
+            #0b0033,
+            #004488
+        );
+}
+
+/* Lore / Weirdcore */
+.win98-titlebar-lore {
+    background:
+        linear-gradient(
+            to right,
+            #2a003f,
+            #6a008f
+        );
+}
+
+/* Infernal / Footer */
+.win98-titlebar-infernal {
+    background:
+        linear-gradient(
+            to right,
+            #1a0000,
+            #5a0000
+        );
+}
+
+/* Nightmare / Dream Sequences */
+.win98-titlebar-nightmare {
+    background:
+        linear-gradient(
+            to right,
+            #240000,
+            #8b0000
+        );
+}
+
+/* Matrix / Terminal */
+.win98-titlebar-terminal {
+    background:
+        linear-gradient(
+            to right,
+            #001a00,
+            #007700
+        );
+}
+
+/* Romantic / Emotional */
+.win98-titlebar-romance {
+    background:
+        linear-gradient(
+            to right,
+            #3a003a,
+            #c00078
+        );
+}
+
+/* Cold Rain / Isolation */
+.win98-titlebar-rain {
+    background:
+        linear-gradient(
+            to right,
+            #001133,
+            #005b8f
+        );
+}
+
+/* VHS / Retro TV */
+.win98-titlebar-vhs {
+    background:
+        linear-gradient(
+            to right,
+            #111111,
+            #555555
+        );
+}
+
+.win98-titlebar-rgb {
+    background:
+        linear-gradient(
+            90deg,
+
+            #0015ff 0%,
+            #0044ff 18%,
+
+            #ff003c 45%,
+            #ff3366 58%,
+
+            #00aa44 82%,
+            #00ff88 100%
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
