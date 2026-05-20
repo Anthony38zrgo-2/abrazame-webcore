@@ -6,27 +6,7 @@ import './styles/titlebars.css'
 
 import 'material-icons/iconfont/material-icons.css'
 
-import Alpine from 'alpinejs'
+import { createApp } from 'vue'
+import App from '@/App.vue'
 
-import { Layout } from './components/Layout'
-
-window.Alpine = Alpine
-
-Alpine.start()
-
-const app =
-    document.querySelector<HTMLDivElement>('#app')
-
-function renderApp(): void {
-
-    if (!app) return
-
-    app.innerHTML = Layout()
-}
-
-renderApp()
-
-window.addEventListener(
-    'hashchange',
-    renderApp
-)
+createApp(App).mount('#app')

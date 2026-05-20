@@ -14,7 +14,7 @@
 }
 
 .layout-texture {
-    background-image: url('/textures/cover1.jpg');
+    background-image: url('@public/textures/cover1.jpg');
 
     background-repeat: repeat-y;
 
