@@ -3,15 +3,10 @@ import c1aJpg from "@public/images/c1a.jpg";
 </script>
 
 <template>
-  <div
-    class="win98-window max-w-5xl mx-auto shadow-[0_0_30px_rgba(0,0,0,0.5)] border border-neutral-400 bg-[#f0eedf]"
-  >
-    <div
-      class="win98-titlebar win98-titlebar-lore flex items-center justify-between px-3 py-2.5 select-none"
-    >
+  <div class="win98-window max-w-5xl mx-auto shadow-[0_0_30px_rgba(0,0,0,0.5)] border border-neutral-400 bg-[#f0eedf]">
+    <div class="win98-titlebar win98-titlebar-lore flex items-center justify-between px-3 py-2.5 select-none">
       <span
-        class="text-sm font-mono tracking-wider text-red-100 drop-shadow-[0_0_4px_rgba(220,38,38,0.6)] flex items-center gap-2"
-      >
+        class="text-sm font-mono tracking-wider text-red-100 drop-shadow-[0_0_4px_rgba(220,38,38,0.6)] flex items-center gap-2">
         <span class="text-red-500">⸸</span> chapter_1.txt
       </span>
       <div class="win98-title-buttons flex gap-1.5">
@@ -21,24 +16,16 @@ import c1aJpg from "@public/images/c1a.jpg";
       </div>
     </div>
 
-    <div
-      class="win98-panel p-8 md:p-12 bg-[#e4e2d5] border-t border-neutral-300"
-    >
-      <h2
-        class="text-5xl leading-tight font-serif text-neutral-900 tracking-wide border-b border-neutral-400 pb-6"
-      >
+    <div class="win98-panel p-8 md:p-12 bg-[#e4e2d5] border-t border-neutral-300">
+      <h2 class="text-5xl leading-tight font-serif text-neutral-900 tracking-wide border-b border-neutral-400 pb-6">
         Pensamientos y Náuseas
       </h2>
 
-      <img
-        :src="c1aJpg"
-        class="mt-8 border-4 border-neutral-900 w-1/2 mx-auto block shadow-md"
-        alt="chapter 1 illustration"
-      />
+      <img :src="c1aJpg" class="mt-8 border-4 border-neutral-900 w-1/2 mx-auto block shadow-md"
+        alt="chapter 1 illustration" />
 
       <div
-        class="mt-12 text-xl font-sans md:text-2xl leading-relaxed space-y-8 tracking-wide max-w-4xl mx-auto text-neutral-950"
-      >
+        class="mt-12 text-xl font-sans md:text-2xl leading-relaxed space-y-8 tracking-wide max-w-4xl mx-auto text-neutral-950">
         <p>
           Contemplaba el atardecer y mi mente regresó a la última cena con mis
           padres, justo la noche antes de que el apocalipsis llegara al pueblo y
@@ -68,8 +55,7 @@ import c1aJpg from "@public/images/c1a.jpg";
         </p>
 
         <blockquote
-          class="border-l-4 border-red-700 bg-red-900/5 pl-6 py-2 italic text-red-900 font-mono my-6 tracking-normal"
-        >
+          class="border-l-4 border-red-700 bg-red-900/5 pl-6 py-2 italic text-red-900 font-mono my-6 tracking-normal">
           —¿No crees que a papá y a mamá les habría encantado esta nueva
           cosecha?
         </blockquote>
@@ -90,8 +76,7 @@ import c1aJpg from "@public/images/c1a.jpg";
         </p>
 
         <blockquote
-          class="border-l-4 border-red-700 bg-red-900/5 pl-6 py-2 italic text-red-900 font-mono my-6 tracking-normal"
-        >
+          class="border-l-4 border-red-700 bg-red-900/5 pl-6 py-2 italic text-red-900 font-mono my-6 tracking-normal">
           —Espero que disfrutes del agua, vecino Antonio.
         </blockquote>
 
@@ -121,7 +106,7 @@ import c1aJpg from "@public/images/c1a.jpg";
 
         <p>Pero la figura no desapareció.</p>
 
-        <p>When the stranger collapsed in the mud, urgency overcame fear.</p>
+        <p>Cuando el extraño colapsó en el lodo al fin pude reaccionar.</p>
 
         <p>
           Corrí a su lado, ignorando la lluvia que ya empezaba a calar mi ropa.
@@ -152,8 +137,7 @@ import c1aJpg from "@public/images/c1a.jpg";
         <p>Más tarde, él levantó la mirada agotada hacia mí para susurrar:</p>
 
         <blockquote
-          class="border-l-4 border-blue-800 bg-blue-900/5 pl-6 py-2 italic text-blue-900 font-mono my-6 tracking-normal"
-        >
+          class="border-l-4 border-blue-800 bg-blue-900/5 pl-6 py-2 italic text-blue-900 font-mono my-6 tracking-normal">
           —Gracias por dejarme pasar. Hace tiempo que no veía a alguien con
           vida. ¿Eres real o estoy delirando?
         </blockquote>
@@ -176,8 +160,7 @@ import c1aJpg from "@public/images/c1a.jpg";
         </p>
 
         <blockquote
-          class="border-l-4 border-blue-800 bg-blue-900/5 pl-6 py-2 italic text-blue-900 font-mono my-6 tracking-normal"
-        >
+          class="border-l-4 border-blue-800 bg-blue-900/5 pl-6 py-2 italic text-blue-900 font-mono my-6 tracking-normal">
           —¿Te gustan los conejos? Esta pintura parece especial. ¿Qué significa?
         </blockquote>
 
@@ -198,14 +181,12 @@ import c1aJpg from "@public/images/c1a.jpg";
         </p>
 
         <blockquote
-          class="border-l-4 border-blue-800 bg-blue-900/5 pl-6 py-2 italic text-blue-900 font-mono my-6 tracking-normal"
-        >
+          class="border-l-4 border-blue-800 bg-blue-900/5 pl-6 py-2 italic text-blue-900 font-mono my-6 tracking-normal">
           —Has vivido cosas muy difíciles, ¿verdad?
         </blockquote>
 
         <blockquote
-          class="border-l-4 border-blue-800 bg-blue-900/5 pl-6 py-2 italic text-blue-900 font-mono my-6 tracking-normal"
-        >
+          class="border-l-4 border-blue-800 bg-blue-900/5 pl-6 py-2 italic text-blue-900 font-mono my-6 tracking-normal">
           —Me llamo Iván. Es un placer conocerte.
         </blockquote>
 
@@ -234,11 +215,9 @@ import c1aJpg from "@public/images/c1a.jpg";
 <style scoped>
 /* Redesigned Titlebar (Crimson to Dark gradient) */
 .win98-titlebar-lore {
-  background: linear-gradient(
-    90deg,
-    rgba(136, 0, 21, 1) 0%,
-    rgba(20, 0, 4, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(136, 0, 21, 1) 0%,
+      rgba(20, 0, 4, 1) 100%);
   border-bottom: 2px solid rgba(185, 28, 28, 0.4);
 }
 
