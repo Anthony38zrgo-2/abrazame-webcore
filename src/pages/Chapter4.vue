@@ -34,8 +34,9 @@ import c4aJpg from "@public/images/c4a.png";
                 class="mt-12 text-xl font-sans md:text-2xl leading-relaxed space-y-8 tracking-wide max-w-4xl mx-auto text-neutral-950">
                 <p>
                     Tanto camino recorrido, tanta montaña cruzada para encontrar un milagro, y ahora que la tengo aquí,
-                    roncando a dos metros... la angustia me pesa más que la soledad. Eran las tres de la mañana.
-                    Estábamos en la sala, tapados con esas frazadas viejas de tigre que pesan demasiado. Dalia roncaba
+                    roncando a dos metros... la angustia me pesa más que la soledad. Eran las tres de la mañana, hace
+                    semanas que habíamos tenido esa conversación profunda con Dal en la iglesia de Prosperidad, y ahora
+                    estábamos en la sala, tapados con esas frazadas viejas de tigre que pesan demasiado. Dalia roncaba
                     suave, tranquila. Yo no podía. Mi cabeza no paraba. El insomnio es mi costumbre desde hace años,
                     pero esta noche era diferente. No era solo falta de sueño. Era culpa... por no ser sincero con Dal
                     Dal. No podía estar quieto, así que fui a la ventana. La luna estaba ahí, sola. El viento movía las

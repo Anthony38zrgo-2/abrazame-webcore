@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import c2aJpg from "@public/images/c2a.jpg";
+import c2aJpg from "@public/images/c2a.png";
 
 // Control de estado para revelar la nota escrita por Dalia
 const notaRevelada = ref(false);

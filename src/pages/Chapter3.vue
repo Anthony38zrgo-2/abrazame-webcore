@@ -1,5 +1,10 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import c3aJpg from "@public/images/c3a.png";
+
+// Control de estados dinámicos para las notas de la libreta de Dalia
+const notaSignificadoRevelada = ref(true);
+const notaSofiaRevelada = ref(true);
 </script>
 
 <template>
@@ -33,9 +38,29 @@ import c3aJpg from "@public/images/c3a.png";
             <div
                 class="mt-12 text-xl font-sans md:text-2xl leading-relaxed space-y-8 tracking-wide max-w-4xl mx-auto text-neutral-950">
                 <p>
+                    Durante años había recorrido Prosperidad completamente sola. Había buscado comida, recogido leña,
+                    pintado murales e incluso caminado hasta el lago sin que mis piernas dudaran un solo segundo. ¿Por
+                    qué ahora era diferente? ¿Por qué, justo cuando tenía a alguien con quien compartir el camino, mi
+                    cuerpo se negaba a cruzar la puerta? Cada intento terminaba igual: el pecho se me cerraba, las manos
+                    empezaban a temblar, las náuseas me revolvían el estómago y mi respiración se volvía tan corta que
+                    debía retroceder antes de desmayarme. La ansiedad siempre ganaba, e Iván, sin decir una sola palabra
+                    de reproche, solo posponía el paseo para el día siguiente.
+                </p>
+
+                <p>
+                    Después de varios intentos fallidos, apareció con un pequeño conejo de arcilla entre las manos. Era
+                    tan amorfo que apenas parecía un conejo; una oreja era más grande que la otra y el cuerpo estaba
+                    torcido, pero lo sostenía con el mismo orgullo con el que yo mostraba mis mejores figuras. «Para que
+                    no salgas sola», dijo Iván sonriendo. No sé por qué algo tan simple consiguió lo que yo no había
+                    podido durante días. Quizá porque aquel conejo no era de arcilla. Era paciencia hecha con dos manos
+                    que nunca intentaron obligarme a vencer mis miedos. Lo sujeté con cuidado, respiré hondo y, por fin,
+                    encontré el valor para abrir la puerta.
+                </p>
+
+                <p>
                     El cielo empezaba a oscurecer más y más. Un viejo paraguas con parches nos protegía de la lluvia,
                     que se volvía cada vez más intensa. Temía que Iván se resfriara; después de todo, era la primera vez
-                    que él salía de mi casa desde que había llegado al pueblo de Prosperidad, no parecía que se había
+                    que él salía de mi casa desde que había llegado al pueblo de Prosperidad y no parecía que se hubiera
                     recuperado del todo. Aun así, estaba ahí, motivándome a salir en un día hermosamente lluvioso.
                 </p>
 
@@ -59,24 +84,18 @@ import c3aJpg from "@public/images/c3a.png";
                 <!-- Diálogo de Dalia (Rojo) -->
                 <blockquote
                     class="border-l-4 border-red-700 bg-red-900/5 pl-6 py-2 italic text-red-900 font-mono my-6 tracking-normal">
-                    —¿Dal Dal? —le respondí con el ceño exageradamente fruncido—. Es el peor apodo que alguien me ha
-                    puesto.
+                    —¿Dal Dal? —le respondí con el ceño exageradamente fruncido—.
                 </blockquote>
+
+                <p>
+                    «Es el peor apodo que alguien me ha puesto», pensé. Yo te voy a apodar "tonto motero".
+                </p>
 
                 <!-- Diálogo de Iván (Azul) -->
                 <blockquote
                     class="border-l-4 border-blue-800 bg-blue-900/5 pl-6 py-2 italic text-blue-900 font-mono my-6 tracking-normal">
-                    —Quizás sí —dijo él encogiéndose de hombros—. Pensaba que tenías algún problema con el habla cuando
-                    decías "Dal Dal", pero después me di cuenta de que era por tu nombre: Dalia. Señorita... ¿podemos
-                    movernos?
-                </blockquote>
-
-                <!-- Diálogo de Dalia (Rojo) -->
-                <blockquote
-                    class="border-l-4 border-red-700 bg-red-900/5 pl-6 py-2 italic text-red-900 font-mono my-6 tracking-normal">
-                    —Yo te voy a apodar "tonto motero" —contesté, señalándolo con un dedo—. Eres muy tonto como para
-                    viajar tanto tiempo sin comer y desmayarte frente a mi casa. ¿Sabes qué? Acompáñame. No vamos a
-                    poder buscar al conejo gris con toda esta lluvia.
+                    —Quizás deberíamos movernos —exclamó mientras miraba a su alrededor buscando un lugar donde
+                    pudiéramos estar tranquilos antes de que la tormenta llegara.
                 </blockquote>
 
                 <p>
@@ -98,22 +117,30 @@ import c3aJpg from "@public/images/c3a.png";
 
                 <p>
                     Primero saqué un poco de comida y agua de mi mochila. Mientras comíamos mirando el aguacero por una
-                    pequeña ventana, le conté el significado de esa pintura hecha con aerosol.
+                    pequeña ventana, escribí el significado de esa pintura hecha con aerosol en mi libreta y luego se lo
+                    di.
                 </p>
 
-                <!-- Diálogo de Dalia (Rojo) -->
-                <blockquote
-                    class="border-l-4 border-red-700 bg-red-900/5 pl-6 py-2 italic text-red-900 font-mono my-6 tracking-normal">
-                    —Después de dos meses del apocalipsis, me costaba comer —empecé a decir, bajando la voz—. Fui al
-                    acantilado que está cerca del lago y... casi cometo una estupidez. Estaba, literalmente, al borde de
-                    un abismo físico, pero también de uno emocional. Era tan difícil simplemente vivir, comer, respirar.
-                    Todos desaparecieron de la noche a la mañana en el apocalipsis, pero siempre me preguntaba: ¿por qué
-                    yo? ¿Qué tenía de especial? ¿Por qué no me habían llevado junto a mis seres queridos? Iba a lanzarme
-                    al abismo hasta que vi a un conejo gris mirándome tiernamente, como queriendo que lo abrazara, y eso
-                    fue lo que hice. Pero tan pronto como lo dejé en el suelo, salió corriendo, no sin antes mirarme.
-                    Después de ese día siempre aparecía cerca de mi casa; venía por comida, pero jamás volvió a dejarse
-                    abrazar, solo me vigilaba o cuidaba desde la lejanía.
-                </blockquote>
+                <!-- Elemento interactivo para abrir la libreta - Nota 1 -->
+                <div class="my-8 p-6 bg-amber-50/40 border border-amber-900/20 rounded shadow-inner text-center">
+                    <button v-if="!notaSignificadoRevelada" @click="notaSignificadoRevelada = true"
+                        class="px-4 py-2 bg-red-900 text-red-100 font-mono text-sm hover:bg-red-800 transition shadow">
+                        [ Leer nota en la libreta de Dalia ]
+                    </button>
+
+                    <blockquote v-else
+                        class="text-left border-l-4 border-amber-700 bg-amber-900/5 pl-6 py-3 italic text-amber-950 font-serif tracking-normal animate-fade-in">
+                        "Después de dos meses del apocalipsis, me costaba comer. Fui al acantilado que está cerca del
+                        lago y... casi cometo una estupidez. Estaba, literalmente, al borde de un abismo físico, pero
+                        también de uno emocional. Era tan difícil simplemente vivir, comer, respirar. Todos
+                        desaparecieron de la noche a la mañana en el apocalipsis, pero siempre me preguntaba: ¿por qué
+                        yo? ¿Qué tenía de especial? ¿Por qué no me habían llevado junto a mis seres queridos? Iba a
+                        lanzarme al abismo hasta que vi a un conejo gris mirándome tiernamente, como queriendo que lo
+                        abrazara, y eso fue lo que hice. Pero tan pronto como lo dejé en el suelo, salió corriendo, no
+                        sin antes mirarme. Después de ese día siempre aparecía cerca de mi casa; venía por comida, pero
+                        jamás volvió a dejarse abrazar, solo me vigilaba o cuidaba desde la lejanía."
+                    </blockquote>
+                </div>
 
                 <p>
                     Iván terminó su pan y luego se acercó más a la ventana. Con voz serena, dijo:
@@ -136,7 +163,7 @@ import c3aJpg from "@public/images/c3a.png";
                     class="border-l-4 border-blue-800 bg-blue-900/5 pl-6 py-2 italic text-blue-900 font-mono my-6 tracking-normal">
                     —Ya me sentía solo antes de que se los llevaran a todos —explicó—. Las calles ya estaban desoladas
                     para mí, con o sin personas. Un día, después de un evento artístico, estando completamente ebrio,
-                    casi me tiré de un puente. But... hubo algo que me detuvo: miré mi celular, vi la foto de mi hija.
+                    casi me tiré de un puente. Pero... hubo algo que me detuvo: miré mi celular, vi la foto de mi hija.
                     No la visitaba desde hacía un año. No podía acabar con mi vida, no mientras Sofía me necesitara,
                     aunque fuera solo económicamente, ya que su madre jamás iba a permitir que pusiera un pie cerca de
                     ella.
@@ -160,12 +187,22 @@ import c3aJpg from "@public/images/c3a.png";
                     —Solo una —contestó él, sacándome la lengua.
                 </blockquote>
 
-                <!-- Diálogo de Dalia (Rojo) -->
-                <blockquote
-                    class="border-l-4 border-red-700 bg-red-900/5 pl-6 py-2 italic text-red-900 font-mono my-6 tracking-normal">
-                    —Si Sofía también desapareció, ¿por qué seguiste con tu vida? ¿Qué te motivó a continuar? —pregunté,
-                    sin apartar la vista de él.
-                </blockquote>
+                <p>
+                    ¿Dudando de si era un momento apropiado para hablar de ello, decidí escribirlo en el papel:
+                </p>
+
+                <!-- Elemento interactivo para abrir la libreta - Nota 2 -->
+                <div class="my-8 p-6 bg-amber-50/40 border border-amber-900/20 rounded shadow-inner text-center">
+                    <button v-if="!notaSofiaRevelada" @click="notaSofiaRevelada = true"
+                        class="px-4 py-2 bg-red-900 text-red-100 font-mono text-sm hover:bg-red-800 transition shadow">
+                        [ Escribir en la libreta ]
+                    </button>
+
+                    <blockquote v-else
+                        class="text-left border-l-4 border-amber-700 bg-amber-900/5 pl-6 py-3 italic text-amber-950 font-serif tracking-normal animate-fade-in">
+                        "Si Sofía también desapareció, ¿por qué seguiste con tu vida? ¿Qué te motivó a continuar?"
+                    </blockquote>
+                </div>
 
                 <!-- Diálogo de Iván (Azul) -->
                 <blockquote
@@ -206,26 +243,37 @@ import c3aJpg from "@public/images/c3a.png";
                     —¿A qué te refieres? —preguntó con curiosidad.
                 </blockquote>
 
-                <!-- Diálogo de Dalia (Rojo) -->
-                <blockquote
-                    class="border-l-4 border-red-700 bg-red-900/5 pl-6 py-2 italic text-red-900 font-mono my-6 tracking-normal">
-                    —Esos conejos, cada uno de ellos representa a alguien que desapareció... a los seres que más quería
-                    —expliqué.
-                </blockquote>
+                <p>
+                    Apoyé la punta del lápiz una vez más para responderle:
+                </p>
 
-                <!-- Diálogo de Iván (Azul) -->
-                <blockquote
-                    class="border-l-4 border-blue-800 bg-blue-900/5 pl-6 py-2 italic text-blue-900 font-mono my-6 tracking-normal">
-                    —¿Puedes hacer un conejo de arcilla de Sofía? —pidió—. Te pagaré de alguna manera si lo haces.
-                </blockquote>
+                <!-- Nota de la libreta 3 (Respuesta de Dalia) - Renderizada fija -->
+                <div class="my-8 p-6 bg-amber-50/40 border border-amber-900/20 rounded shadow-inner">
+                    <blockquote
+                        class="border-l-4 border-amber-700 bg-amber-900/5 pl-6 py-3 italic text-amber-950 font-serif tracking-normal">
+                        "Esos conejos, cada uno de ellos representa a alguien que desapareció... a los seres que más
+                        quería."
+                    </blockquote>
+                </div>
 
-                <!-- Diálogo de Dalia (Rojo) -->
-                <blockquote
-                    class="border-l-4 border-red-700 bg-red-900/5 pl-6 py-2 italic text-red-900 font-mono my-6 tracking-normal">
-                    —No es necesario que me pagues, Iván —respondí—. Haré ese conejo solo si me prometes algo. Sé que
-                    eres un aventurero y nada te ata aquí, a Prosperidad. Sé que en algún momento te irás con tu moto.
-                    Pero... ¿podría quedarte una semana? Es lo que me toma hacer un conejo de arcilla, más o menos.
-                </blockquote>
+                <p class="font-sans text-xl md:text-2xl text-neutral-950">
+                    —¿Puedes hacer un conejo de arcilla de Sofía? —pidió Iván—. Te pagaré de alguna manera si lo haces.
+                </p>
+
+                <p class="font-sans text-xl md:text-2xl text-neutral-950">
+                    Escribí en mi libreta porque sentía que la voz no iba a salir del todo bien:
+                </p>
+
+                <!-- Nota de la libreta 4 (Promesa de Dalia) - Renderizada fija -->
+                <div class="my-8 p-6 bg-amber-50/40 border border-amber-900/20 rounded shadow-inner">
+                    <blockquote
+                        class="border-l-4 border-amber-700 bg-amber-900/5 pl-6 py-3 italic text-amber-950 font-serif tracking-normal">
+                        "No es necesario que me pagues, Iván. Haré ese conejo solo si me prometes algo. Sé que eres
+                        un aventurero y nada te ata aquí, a Prosperidad. Sé que en algún momento te irás con tu
+                        moto. Pero... ¿podrías quedarte una semana? Es lo que me toma hacer un conejo de arcilla,
+                        más o menos."
+                    </blockquote>
+                </div>
 
                 <!-- Diálogo de Iván (Azul) -->
                 <blockquote
@@ -268,13 +316,17 @@ import c3aJpg from "@public/images/c3a.png";
                     empedradas, no sin antes mirarme fijamente antes de esconderse entre los arbustos. En un solo día
                     había cumplido los deseos que había pedido en todos mis cumpleaños pasados: volver a abrazar a ese
                     conejo y encontrar a alguien con vida. Sabía que lo primero era posible, pero lo segundo... jamás
-                    pensé que un desconocido llegaría a mi puerta y decidiría quedarse.
+                    pensé que un desconocido llegaría a mi puerta y decidiría quedarse. Miré durante varios minutos al
+                    conejo de arcilla creado por Iván y al conejo plateado y gordo de Prosperidad.
                 </p>
 
                 <p>
-                    Todo este tiempo había vivido para cumplir esos deseos, y ahora que se habían cumplido... ¿qué se
-                    suponía que debía hacer después? Quizá era algo que debía reflexionar en mi casa, mirando el techo
-                    como solía hacerlo... pero esta vez, en compañía de alguien más.
+                    Sostuve al conejo deforme como si no quisiera soltarlo; por primera vez después de mucho tiempo
+                    quería estar en el presente. No en el pasado con todas las personas de Prosperidad, ni en un futuro
+                    donde encontraba muchos supervivientes como yo. Todo este tiempo había vivido para cumplir esos
+                    deseos, y ahora que se habían cumplido... ¿qué se suponía que debía hacer después? Quizá era algo
+                    que debía reflexionar en mi casa, mirando el techo como solía hacerlo... pero esta vez, en compañía
+                    de alguien más.
                 </p>
             </div>
         </div>
@@ -299,5 +351,22 @@ import c3aJpg from "@public/images/c3a.png";
     border-left: 1.5px solid #4c0519;
     border-right: 1.5px solid #000;
     border-bottom: 1.5px solid #000;
+}
+
+/* Transición suave para la revelación del texto */
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 </style>

@@ -230,8 +230,7 @@ import c5aJpg from "@public/images/c5a.png";
                     soledad en este pueblo fantasma, todo para preparar su gran obra maestra de la crueldad. Me manda a
                     un hombre que logra espantar mis pesadillas, a alguien que encaja en mis espacios rotos con una
                     perfección que asusta... solo para revelarme que tiene fecha de caducidad. Sobrevivir al apocalipsis
-                    para que tu media naranja se muera de cáncer. Qué infinita, qué asquerosa injusticia. Era una broma
-                    macabra, y yo era el maldito remate.
+                    para que tu media naranja se muera de cáncer. Qué asquerosa injusticia.
                 </p>
 
                 <!-- Bloque Estilizado de Sueño Low-Poly / Secuencia Retro CGI -->
