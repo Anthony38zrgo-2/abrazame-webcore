@@ -93,7 +93,7 @@ import c6aJpg from "@public/images/c6a.png";
                 </blockquote>
 
                 <p>
-                    La cara de Dal de paso a ser otra vez de enfado, pero esta vez parecía fingido, como queriendo que
+                    La cara de Dal dio paso a ser otra vez de enfado, pero esta vez parecía fingido, como queriendo que
                     yo le contara la sorpresa. Si iba a morir, ya fuera por el cáncer o por cualquier otra miseria de
                     este mundo, tenía que ser una muerte útil. Debía dejarle recuerdos, enseñarle que hay algo más que
                     este encierro.
@@ -147,7 +147,7 @@ import c6aJpg from "@public/images/c6a.png";
                 <p>
                     Un ventarrón helado cruzó el porche, haciéndola tiritar bajo su ropa oscura. Levantó las manos hacia
                     mí; temblaban sin control. Sin decir una palabra, me quité la casaca de cuero pesada y se la puse
-                    sobre los hombros para cortar el frío. Me arrodillé frente a ella y envolvió sus manos heladas con
+                    sobre los hombros para cortar el frío. Me arrodillé frente a ella y envolví sus manos heladas con
                     las mías, frotando mis pulgares sobre sus nudillos vendados para devolverles el calor.
                 </p>
 

@@ -188,7 +188,7 @@ const notaSofiaRevelada = ref(true);
                 </blockquote>
 
                 <p>
-                    ¿Dudando de si era un momento apropiado para hablar de ello, decidí escribirlo en el papel:
+                    Dudando de si era un momento apropiado para hablar de ello, decidí escribirlo en el papel:
                 </p>
 
                 <!-- Elemento interactivo para abrir la libreta - Nota 2 -->
@@ -214,7 +214,7 @@ const notaSofiaRevelada = ref(true);
                     sentir vacío. Pero llegó el apocalipsis y me hizo dar cuenta de algo: más allá de Sofía, no tenía
                     ningún sueño, no perseguía ninguna pasión. Solo trabajaba como si estuviera en piloto automático,
                     viendo mi vida como un espectador de una película tragicómica. Me dolió mucho aceptar que jamás
-                    volvería a ver a Sofía, pero pensé: "Si no hay personas en este mundo, ¿Por qué no explorarlo todo
+                    volvería a ver a Sofía, pero pensé: "Si no hay personas en este mundo, ¿por qué no explorarlo todo
                     junto a mi vieja moto?". Y eso fue lo que hice. No esperaba encontrar a alguien en el camino. Mi
                     vida empezó a cobrar un nuevo sentido. Hay paisajes tan hermosos como tu dibujo, Dalia... paisajes,
                     momentos, música, que vale la pena vivir.

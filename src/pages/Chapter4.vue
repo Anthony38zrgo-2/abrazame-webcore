@@ -240,7 +240,7 @@ import c4aJpg from "@public/images/c4a.png";
                 <!-- Diálogo de Dalia (Rojo) -->
                 <blockquote
                     class="border-l-4 border-red-700 bg-red-900/5 pl-6 py-2 italic text-red-900 font-mono my-6 tracking-normal">
-                    —Quizás he vivido todo este tiempo en el pasado,ini subiendo esas escaleras —dijo, apretándome los
+                    —Quizás he vivido todo este tiempo en el pasado, subiendo esas escaleras —dijo, apretándome los
                     dedos—. Pero si pudiera cambiar las cosas... es difícil. Si pudiera elegir, tendría a mis padres y
                     sería ingeniera, sí... pero jamás te habría conocido. Y eso sería muy triste, porque eres de las
                     pocas personas que siento que me entienden. No podemos cambiar el pasado, ni sabemos el futuro.
@@ -271,7 +271,7 @@ import c4aJpg from "@public/images/c4a.png";
                 <!-- Diálogo de Dalia (Rojo) -->
                 <blockquote
                     class="border-l-4 border-red-700 bg-red-900/5 pl-6 py-2 italic text-red-900 font-mono my-6 tracking-normal">
-                    —Iván, tienes que entender algo —su voz temblor—. Yo nunca salí de aquí. Nunca. Ni siquiera antes.
+                    —Iván, tienes que entender algo —su voz tembló—. Yo nunca salí de aquí. Nunca. Ni siquiera antes.
                     Mis padres viajaban a la ciudad, pero yo... yo siempre tenía una excusa para quedarme. Pánico,
                     mareos, lo que sea. Me aterra lo que hay más allá de esas montañas. Siempre me ha aterrado. No sé si
                     soy capaz de dar un paso fuera de este pueblo sin que me dé un ataque de ansiedad. Me da miedo,
@@ -301,7 +301,7 @@ import c4aJpg from "@public/images/c4a.png";
                 <!-- Diálogo de Dalia (Rojo) -->
                 <blockquote
                     class="border-l-4 border-red-700 bg-red-900/5 pl-6 py-2 italic text-red-900 font-mono my-6 tracking-normal">
-                    —¿And cómo sabremos cuándo hacerlo? —murmuró acariciando su cabello esponjoso.
+                    —¿Y cómo sabremos cuándo hacerlo? —murmuró acariciando su cabello esponjoso.
                 </blockquote>
 
                 <!-- Diálogo de Iván (Azul) -->

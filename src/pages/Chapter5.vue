@@ -101,7 +101,7 @@ import c5aJpg from "@public/images/c5a.png";
                     El suelo frío de piedra me recibió como siempre. Me dejé caer de rodillas, temblando, mirando ese
                     techo resquebrajado que conocía desde niña. Intenté respirar, contar hasta diez, aplicar cada
                     estúpida técnica que me había enseñado a mí misma para evitar el colapso... pero el oxígeno no
-                    entraba. El dolor emocional fue tan físico, una punzada tan violenten en el estómago, que terminé
+                    entraba. El dolor emocional fue tan físico, una punzada tan violenta en el estómago, que terminé
                     vomitando bilis y terror en una esquina oscura de la iglesia. Tosía, con la garganta ardiendo y las
                     lágrimas empañándome la vista, cuando escuché las bisagras de la vieja puerta de madera. No era el
                     viento. Era él.
@@ -138,7 +138,7 @@ import c5aJpg from "@public/images/c5a.png";
                 </blockquote>
 
                 <p>
-                    La pfirmación me golpeó como un bloque de cemento. La negación se esfumó, dejando paso a una rabia
+                    La confirmación me golpeó como un bloque de cemento. La negación se esfumó, dejando paso a una rabia
                     caliente y ciega.
                 </p>
 
