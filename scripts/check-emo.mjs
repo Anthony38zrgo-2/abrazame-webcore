@@ -1,7 +1,8 @@
 import { chromium } from 'playwright';
+const BASE = process.env.BASE_URL || process.env.BASE || 'http://127.0.0.1:5173/abrazame-webcore/';
 const b = await chromium.launch({headless:true});
 const p = await b.newPage({ viewport:{width:1024, height:768}});
-await p.goto('http://127.0.0.1:5173/abrazame-webcore/', {waitUntil:'networkidle'});
+await p.goto(BASE, {waitUntil:'networkidle'});
 await p.waitForTimeout(800);
 let outer = await p.evaluate(()=> {
   const el = document.querySelector('header .aero-window');

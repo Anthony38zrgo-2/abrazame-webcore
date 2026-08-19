@@ -1,7 +1,8 @@
 import { chromium } from 'playwright';
+const BASE = process.env.BASE_URL || process.env.BASE || 'http://127.0.0.1:5173/abrazame-webcore/';
 const b = await chromium.launch({headless:true});
 const p = await b.newPage();
-await p.goto('http://127.0.0.1:5173/abrazame-webcore/#/c1', {waitUntil:'networkidle'});
+await p.goto(BASE + '#/c1', {waitUntil:'networkidle'});
 let sideGifs = await p.evaluate(()=> Array.from(document.querySelectorAll('aside img')).length);
 console.log('side gifs count', sideGifs);
 let floating = await p.evaluate(()=> document.querySelectorAll('.floating-gifs').length);

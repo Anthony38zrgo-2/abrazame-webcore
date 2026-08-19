@@ -2,7 +2,7 @@
 // scripts/audit-overflow.mjs — auditoría DOM hasHScroll / clip (creado)
 import { chromium } from 'playwright';
 
-const BASE_URL = process.env.BASE_URL || 'http://127.0.0.1:5173/abrazame-webcore/';
+const BASE_URL = process.env.BASE_URL || process.env.BASE || 'http://127.0.0.1:5173/abrazame-webcore/';
 
 async function main() {
   console.log(`[audit-overflow] auditing ${BASE_URL}`);

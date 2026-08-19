@@ -1,15 +1,27 @@
-/* XP LAYOUT — sin card de fondo (transparente, deja ver body) */
+/* PORTAL 2004 LAYOUT — XP override, mismo portal */
 .aero-layout__content {
-  background: transparent !important;
+  background: #3737D8 !important;
   background-image: none !important;
-  background-color: transparent !important;
+  background-color: #3737D8 !important;
   backdrop-filter: none !important;
-  border: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 2px solid #000000 !important;
+  border-radius: 6px !important;
   box-shadow: none !important;
-  position: relative;
+  position: relative !important;
+  overflow: visible !important;
+  padding: 8px !important;
 }
-.aero-layout__content::before { display: none !important; }
+.aero-layout__content::before {
+  display: none !important;
+}
 .aero-layout__texture {
-  opacity: 0.22 !important;
-  filter: saturate(0.7) brightness(0.95) blur(0.3px) !important;
+  background: #2874D8 !important;
+  background-image: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  border: 2px solid #000000 !important;
+  border-radius: 6px !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
 }

@@ -1,25 +1,31 @@
-/* MOOD: infernal/nightmare — rojo sangre complementario a sky */
-[data-mood="infernal"], [data-mood="nightmare"] {
-  --aero-accent: #dc2626;
-  --aero-accent-strong: #450a0a;
-  --aero-accent-soft: rgba(220,38,38,0.24);
-  --aero-title-from: #450a0a;
-  --aero-title-to: #f87171;
-  --aero-glass-bg: rgba(254,226,226,0.22);
-  --aero-panel-bg: rgba(254,242,242,0.85);
-  --aero-text: #450a0a;
-  --font-display: "Creepster", cursive;
-  --font-mono: "Creepster", cursive;
+/* PORTAL 2004 MOOD: infernal/nightmare — neutralizado */
+[data-mood="infernal"],
+[data-mood="nightmare"] {
+  --aero-accent: #C000D8;
+  --aero-accent-strong: #5C34B7;
+  --aero-accent-soft: #C000D8;
+  --aero-title-from: #C000D8;
+  --aero-title-to: #C000D8;
+  --aero-glass-bg: #FFFFFF;
+  --aero-panel-bg: #FFFFFF;
+  --aero-text: #222222;
+  --font-display: Verdana, Arial, Tahoma, sans-serif;
+  --font-mono: Verdana, Arial, Tahoma, sans-serif;
 }
-[data-mood="infernal"] .aero-panel h2, [data-mood="nightmare"] .aero-panel h2 {
-  font-family: "Creepster", cursive !important;
-  letter-spacing: 0.04em;
-  color: #7f1d1d !important;
-  border-color: #fca5a5 !important;
-  text-shadow: 0 2px 0 rgba(220,38,38,0.2);
+[data-mood="infernal"] .aero-panel h2,
+[data-mood="nightmare"] .aero-panel h2 {
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  letter-spacing: 0 !important;
+  color: #222222 !important;
+  border-color: #C000D8 !important;
+  text-shadow: none !important;
+  text-transform: none !important;
 }
-[data-mood="infernal"] blockquote, [data-mood="nightmare"] blockquote {
-  border-color: #dc2626 !important;
-  background: rgba(220,38,38,0.12) !important;
-  color: #7f1d1d !important;
+[data-mood="infernal"] blockquote,
+[data-mood="nightmare"] blockquote {
+  border-color: #C000D8 !important;
+  background: #FFE6FF !important;
+  color: #222222 !important;
 }

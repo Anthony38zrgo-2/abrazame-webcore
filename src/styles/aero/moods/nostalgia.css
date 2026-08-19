@@ -1,31 +1,32 @@
-/* MOOD: nostalgia — otoñal INTENSO (complementario a rain frío) */
+/* PORTAL 2004 MOOD: nostalgia — neutralizado a portal */
 [data-mood="nostalgia"] {
-  --aero-accent: #d97706;
-  --aero-accent-strong: #7c2d12;
-  --aero-accent-soft: rgba(217,119,6,0.22);
-  --aero-title-from: #7c2d12;
-  --aero-title-to: #fdba74;
-  --aero-glass-bg: rgba(255,237,213,0.32);
-  --aero-panel-bg: rgba(255,251,235,0.85);
-  --aero-text: #431407;
-  --font-display: "Cormorant Garamond", Georgia, serif;
-  --font-mono: "Cormorant Garamond", serif;
+  --aero-accent: #C000D8;
+  --aero-accent-strong: #5C34B7;
+  --aero-accent-soft: #C000D8;
+  --aero-title-from: #C000D8;
+  --aero-title-to: #C000D8;
+  --aero-glass-bg: #FFFFFF;
+  --aero-panel-bg: #FFFFFF;
+  --aero-text: #222222;
+  --font-display: Verdana, Arial, Tahoma, sans-serif;
+  --font-mono: Verdana, Arial, Tahoma, sans-serif;
 }
 [data-mood="nostalgia"] .aero-panel h2 {
-  font-family: "Cormorant Garamond", serif !important;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: #7c2d12 !important;
-  border-color: #fdba74 !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  letter-spacing: 0 !important;
+  color: #222222 !important;
+  border-color: #C000D8 !important;
 }
 [data-mood="nostalgia"] .aero-panel {
-  background: rgba(255,251,235,0.85) !important;
-  border-color: #fed7aa !important;
+  background: #FFFFFF !important;
+  border-color: #000000 !important;
 }
 [data-mood="nostalgia"] blockquote {
-  border-color: #d97706 !important;
-  background: rgba(217,119,6,0.12) !important;
-  color: #7c2d12 !important;
-  font-family: "Cormorant Garamond", serif !important;
+  border-color: #2874D8 !important;
+  background: #E6F0FF !important;
+  color: #222222 !important;
+  font-family: Verdana, Arial, Tahoma, sans-serif !important;
 }
-[data-mood="nostalgia"] .aero-rain span { color: rgba(180,90,20,0.65) !important; }
+[data-mood="nostalgia"] .aero-rain span { color: #C000D8 !important; opacity: 0.35 !important; }

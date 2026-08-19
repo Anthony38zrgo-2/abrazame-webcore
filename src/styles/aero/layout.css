@@ -1,44 +1,70 @@
-/* AERO LAYOUT — tripartito con aurora */
+/* PORTAL 2004 LAYOUT — tripartito denso */
 .aero-layout {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: transparent;
+  gap: 0;
 }
 
 .aero-layout__body {
   flex: 1;
   display: grid;
-  grid-template-columns: 220px 1fr 220px;
+  grid-template-columns: 190px 1fr 190px;
+  gap: 8px;
+  padding: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  align-items: start;
 }
 
 @media (max-width: 1024px) {
-  .aero-layout__body { grid-template-columns: 1fr; }
-  .aero-layout__texture { display: none; }
+  .aero-layout__body {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .aero-layout__texture {
+    display: none !important;
+  }
 }
 
+/* Barras laterales — azul brillante sólido, portal 2004 */
 .aero-layout__texture {
-  background-image: url('/textures/cover1.jpg');
-  background-repeat: repeat-y;
-  background-size: 260px auto;
-  background-position: top center;
-  opacity: 0.38;
-  filter: saturate(0.6) brightness(0.9) blur(0.5px);
-  border-left: 1px solid rgba(255,255,255,0.15);
-  border-right: 1px solid rgba(255,255,255,0.15);
-  mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+  background: #2874D8 !important;
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+  background-size: auto !important;
+  opacity: 1 !important;
+  filter: none !important;
+  border: 2px solid #000000 !important;
+  border-radius: 6px !important;
+  min-height: 420px;
+  padding: 8px;
+  display: block;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
 }
 
+/* Panel principal — azul/violeta intenso */
 .aero-layout__content {
   position: relative;
-  overflow: hidden;
-  background: linear-gradient(to bottom, rgba(10,42,74,0.38), rgba(0,0,0,0.14));
-  backdrop-filter: blur(2px);
-  padding: 16px;
-  max-width: 1440px;
-  margin: 0 auto;
+  overflow: visible;
+  background: #3737D8 !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  padding: 8px;
+  max-width: none;
+  margin: 0;
   width: 100%;
 }
+
 @media (min-width: 768px) {
-  .aero-layout__content { padding: 32px; }
+  .aero-layout__content {
+    padding: 10px;
+  }
 }

@@ -28,7 +28,7 @@ onUnmounted(() => {
     :data-mood="mood ?? undefined"
     :data-section-id="id"
     :aria-label="label"
-    class="scroll-mt-8 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]"
+    class="scroll-mt-2"
   >
     <slot />
   </section>
@@ -36,11 +36,7 @@ onUnmounted(() => {
 
 <style scoped>
 section {
-  transition:
-    background-color 700ms ease,
-    color 700ms ease,
-    border-color 700ms ease,
-    font-family 400ms ease,
-    filter 700ms ease;
+  transition: none !important;
+  scroll-margin-top: 8px !important;
 }
 </style>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { currentHash, currentChapterNumber } from '@/router'
+import { currentHash, currentChapterNumber } from '@/router/hash'
 
 const TOTAL = 6
 const BASE = '/abrazame-webcore/'

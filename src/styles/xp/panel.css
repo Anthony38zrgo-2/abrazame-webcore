@@ -1,15 +1,27 @@
-/* XP PANEL — beige */
+/* PORTAL 2004 PANEL — XP override */
 .aero-panel {
-  background: #ECE9D8 !important;
+  background: #FFFFFF !important;
+  background-image: none !important;
   backdrop-filter: none !important;
-  border-top: 1px solid #ACA899 !important;
-  border-radius: 0 !important;
-  font-family: "Tahoma", sans-serif !important;
+  -webkit-backdrop-filter: none !important;
+  border-top: 2px solid #000000 !important;
+  border-radius: 0 0 6px 6px !important;
+  font-family: Verdana, Arial, Tahoma, sans-serif !important;
   font-size: 11px !important;
+  line-height: 1.5 !important;
+  color: #222222 !important;
+  padding: 8px !important;
 }
 .aero-panel h2 {
-  font-family: "Tahoma", sans-serif !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 14px !important;
   font-weight: 700 !important;
-  color: #0A246A !important;
-  border-color: #ACA899 !important;
+  color: #222222 !important;
+  border-color: #C000D8 !important;
+  border-bottom: 2px solid #C000D8 !important;
+  padding-bottom: 4px !important;
+}
+.aero-panel blockquote {
+  border-left: 3px solid #2874D8 !important;
+  background: #E6F0FF !important;
 }

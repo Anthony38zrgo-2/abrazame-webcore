@@ -1,33 +1,27 @@
-/* XP WINDOW — Luna frame */
-.xp-window, .aero-window {
-  background: var(--xp-bg);
-  border: 1px solid #0A46A3;
-  border-top: 1px solid #4A90E2;
-  border-radius: var(--xp-radius) var(--xp-radius) 0 0;
-  box-shadow: var(--xp-shadow);
-  overflow: hidden;
-  position: relative;
-  transition: all 500ms ease;
-}
-/* XP window has thick blue border like Luna — glossy heavy plastic */
+/* PORTAL 2004 WINDOW — XP neutralizado */
+.xp-window,
 .aero-window {
-  background: var(--xp-bg) !important;
+  background: #FFFFFF !important;
+  background-image: none !important;
   backdrop-filter: none !important;
-  border: 3px solid #0A46A3 !important;
-  border-top: 3px solid #3C81F5 !important;
-  border-radius: 8px 8px 0 0 !important;
-  box-shadow: 4px 4px 0 #000, 0 6px 16px rgba(0,0,0,0.4) !important;
-  overflow: visible !important;
+  -webkit-backdrop-filter: none !important;
+  border: 2px solid #000000 !important;
+  border-top: 2px solid #000000 !important;
+  border-radius: 6px !important;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.85) !important;
+  overflow: hidden !important;
+  position: relative !important;
+  transition: none !important;
 }
-.aero-window::before {
-  content: "" !important;
-  display: block !important;
-  position: absolute !important;
-  top: 0 !important; left: 0 !important; right: 0 !important;
-  height: 48% !important;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.62), rgba(255,255,255,0)) !important;
-  pointer-events: none !important;
-  border-radius: 8px 8px 0 0 !important;
-  z-index: 1 !important;
+
+.aero-window::before,
+.xp-window::before {
+  display: none !important;
+  content: none !important;
 }
-header .aero-window { margin-bottom: -8px !important; position: relative !important; z-index: 2 !important; }
+
+header .aero-window {
+  margin-bottom: 8px !important;
+  position: relative !important;
+  z-index: 2 !important;
+}

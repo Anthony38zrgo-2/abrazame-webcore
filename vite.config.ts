@@ -41,6 +41,13 @@ function publicUrlImports(): Plugin {
 export default defineConfig({
     plugins: [publicUrlImports(), vue(), svgLoader()],
     base: '/abrazame-webcore/',
+    server: {
+        host: '0.0.0.0',
+        port: 5173,
+        watch: {
+            ignored: ['**/*.tmp', '**/*.tmpdir/**', '**/.tmpdir/**'],
+        },
+    },
     resolve: {
         alias: {
             '@': path.resolve(__dirname, './src'),

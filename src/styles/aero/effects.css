@@ -1,44 +1,37 @@
-/* =======================================================
-   AERO EFFECTS — gloss, reflections, webcore
-   ======================================================= */
+/* PORTAL 2004 EFFECTS — sin glow, sin blur */
 .aero-glow {
-  box-shadow: 0 0 24px var(--aero-accent-soft), 0 0 48px rgba(58,141,222,0.12);
-  transition: box-shadow var(--aero-transition);
+  box-shadow: none !important;
+  transition: none !important;
 }
 
 .aero-reflection {
-  position: relative;
+  position: relative !important;
 }
 .aero-reflection::after {
-  content: "";
-  position: absolute;
-  bottom: -18px;
-  left: 4%;
-  right: 4%;
-  height: 18px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.18), transparent);
-  filter: blur(4px);
-  border-radius: 50%;
-  pointer-events: none;
+  display: none !important;
+  content: none !important;
 }
 
-/* Aero rain — FIXED detrás del card (z 0), delante del fondo body */
 .aero-rain {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 0;
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+  opacity: 0.35 !important;
 }
 
-/* VHS scanline sutil para mood vhs */
+.aero-rain span {
+  filter: none !important;
+  text-shadow: none !important;
+  opacity: 0.5 !important;
+  color: #FFFFFF !important;
+}
+
+/* VHS scanline desactivado — portal limpio */
 .aero-vhs::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(to bottom, transparent 0px, transparent 2px, rgba(0,0,0,0.06) 3px);
-  pointer-events: none;
-  z-index: 1;
+  display: none !important;
+  content: none !important;
 }

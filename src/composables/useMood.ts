@@ -1,5 +1,5 @@
 import { ref, computed, watch, onMounted } from 'vue'
-import { currentHash } from '@/router'
+import { currentHash } from '@/router/hash'
 import { getMood } from '@/moods/registry'
 import { getChapterMood } from '@/moods/chapters'
 import type { MoodId } from '@/types/mood'
