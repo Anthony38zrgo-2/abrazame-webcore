@@ -1,17 +1,16 @@
 <script setup lang="ts">
-import AeroWindow from '@/components/aero/AeroWindow.vue'
-import AeroTitlebar from '@/components/aero/AeroTitlebar.vue'
+import { UiWindow, UiTitlebar } from '@/components/ui'
 </script>
 
 <template>
   <header class="p-3 md:p-4">
-    <AeroWindow variant="system">
-      <AeroTitlebar variant="system" icon="♥">
+    <UiWindow variant="system">
+      <UiTitlebar variant="system" icon="♥">
         <span class="header-title">
           ¡Abrázame!, después del apocalipsis
         </span>
-      </AeroTitlebar>
-    </AeroWindow>
+      </UiTitlebar>
+    </UiWindow>
   </header>
 </template>
 
