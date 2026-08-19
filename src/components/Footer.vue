@@ -1,13 +1,12 @@
 <script setup lang="ts">
-import AeroWindow from '@/components/aero/AeroWindow.vue'
-import AeroTitlebar from '@/components/aero/AeroTitlebar.vue'
+import { UiWindow, UiTitlebar } from '@/components/ui'
 import missingPng from "@public/textures/missing.png";
 </script>
 
 <template>
   <footer class="p-4">
-    <AeroWindow variant="occult">
-      <AeroTitlebar title="footer_information.sys" variant="occult" icon="⸸" />
+    <UiWindow variant="occult">
+      <UiTitlebar title="footer_information.sys" variant="occult" icon="⸸" />
       <div class="relative overflow-hidden px-6 py-10" style="background: linear-gradient(to bottom, #0a0a0a, #000);">
         <div class="absolute inset-0 pointer-events-none opacity-40" :style="{
           backgroundImage: `url(${missingPng})`,
@@ -25,6 +24,6 @@ import missingPng from "@public/textures/missing.png";
           </div>
         </div>
       </div>
-    </AeroWindow>
+    </UiWindow>
   </footer>
 </template>
