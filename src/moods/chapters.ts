@@ -56,6 +56,20 @@ export const CHAPTER_MOODS: ChapterMood[] = [
   },
 ]
 
-export function getChapterMood(hash: string) {
-  return CHAPTER_MOODS.find(c => c.hash === hash) ?? CHAPTER_MOODS[0]
+/**
+ * Returns only the route portion understood by the story shell.
+ * Unknown or malformed hashes intentionally fall back to Home.
+ */
+export function normalizeChapterHash(hash: string): string {
+  if (hash === '#/' || hash === '#') return '#/'
+  return hash.match(/^#\/c\d+/)?.[0] ?? '#/'
+}
+
+export function findChapterMood(hash: string): ChapterMood | undefined {
+  const normalized = normalizeChapterHash(hash)
+  return CHAPTER_MOODS.find(chapter => chapter.hash === normalized)
+}
+
+export function getChapterMood(hash: string): ChapterMood {
+  return findChapterMood(hash) ?? CHAPTER_MOODS[0]!
 }
