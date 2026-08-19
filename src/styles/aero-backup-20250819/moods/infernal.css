@@ -1,0 +1,25 @@
+/* MOOD: infernal/nightmare — rojo sangre complementario a sky */
+[data-mood="infernal"], [data-mood="nightmare"] {
+  --aero-accent: #dc2626;
+  --aero-accent-strong: #450a0a;
+  --aero-accent-soft: rgba(220,38,38,0.24);
+  --aero-title-from: #450a0a;
+  --aero-title-to: #f87171;
+  --aero-glass-bg: rgba(254,226,226,0.22);
+  --aero-panel-bg: rgba(254,242,242,0.85);
+  --aero-text: #450a0a;
+  --font-display: "Creepster", cursive;
+  --font-mono: "Creepster", cursive;
+}
+[data-mood="infernal"] .aero-panel h2, [data-mood="nightmare"] .aero-panel h2 {
+  font-family: "Creepster", cursive !important;
+  letter-spacing: 0.04em;
+  color: #7f1d1d !important;
+  border-color: #fca5a5 !important;
+  text-shadow: 0 2px 0 rgba(220,38,38,0.2);
+}
+[data-mood="infernal"] blockquote, [data-mood="nightmare"] blockquote {
+  border-color: #dc2626 !important;
+  background: rgba(220,38,38,0.12) !important;
+  color: #7f1d1d !important;
+}

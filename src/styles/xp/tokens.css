@@ -1,0 +1,43 @@
+/* =======================================================
+   XP TOKENS — Windows XP Luna (2001) — Frutiger predecessor
+   ======================================================= */
+:root {
+  --xp-radius: 8px;
+  --xp-radius-sm: 4px;
+  --xp-border: #4C1D95;
+  --xp-border-light: #9D7CFF;
+  --xp-bg: #F5EFE6;
+  --xp-bg-light: #FFD6E8;
+  --xp-shadow: 0 8px 24px rgba(76,29,149,0.18);
+  --xp-title-from: #4C1D95;
+  --xp-title-to: #9D7CFF;
+  --xp-title-mid: #7C3AED;
+  --xp-text: #18181B;
+  --xp-text-title: #FFFFFF;
+  --xp-button-face: #F5EFE6;
+  --xp-button-shadow: #E8DCC6;
+  --xp-transition: 500ms cubic-bezier(0.22,1,0.36,1);
+
+  /* Paleta Prosperidad Pastel */
+  --beige: #F5EFE6;
+  --rosa-pastel: #FFD6E8;
+  --rosado: #E89CB8;
+  --violeta: #9D7CFF;
+  --purpura: #4C1D95;
+  --aero-panel-bg: rgba(245,239,230,0.85);
+  --aero-glass-bg: rgba(255,214,232,0.28);
+  --aero-accent: #9D7CFF;
+  --aero-accent-strong: #4C1D95;
+  --aero-accent-soft: rgba(157,124,255,0.18);
+
+  /* Fonts — mantiene Tahoma para XP pero con fallback pastel */
+  --font-display: "Tahoma", "Inter", system-ui, sans-serif;
+  --font-mono: "Courier New", monospace;
+  --font-serif: "Cormorant Garamond", serif;
+}
+@media (max-width: 768px) {
+  :root { --xp-radius: 6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --xp-transition: 0ms; }
+}

@@ -1,0 +1,31 @@
+/* =======================================================
+   AERO PANEL — contenido translúcido
+   ======================================================= */
+.aero-panel {
+  position: relative;
+  z-index: 2;
+  background: var(--aero-panel-bg);
+  backdrop-filter: blur(var(--aero-blur-panel)) saturate(1.15);
+  -webkit-backdrop-filter: blur(var(--aero-blur-panel)) saturate(1.15);
+  border-top: 1px solid var(--aero-panel-border);
+  border-radius: 0 0 var(--aero-radius) var(--aero-radius);
+  transition: background var(--aero-transition);
+}
+
+.aero-panel--solid {
+  background: rgba(252, 252, 250, 0.96);
+}
+
+/* Tipografía dentro del panel hereda vars */
+.aero-panel h2 {
+  font-family: var(--font-display);
+  color: var(--aero-text);
+}
+
+.aero-panel p {
+  color: #1a2535;
+}
+
+@supports not (backdrop-filter: blur(1px)) {
+  .aero-panel { background: #fdfcfa; }
+}

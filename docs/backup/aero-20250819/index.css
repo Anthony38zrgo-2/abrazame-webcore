@@ -1,0 +1,15 @@
+@import "./tokens.css";
+@import "./base.css";
+@import "./window.css";
+@import "./titlebar.css";
+@import "./panel.css";
+@import "./buttons.css";
+@import "./effects.css";
+
+/* Moods */
+@import "./moods/nostalgia.css";
+@import "./moods/melancholy.css";
+@import "./moods/lore.css";
+@import "./moods/rain.css";
+@import "./moods/infernal.css";
+@import "./moods/vhs.css";

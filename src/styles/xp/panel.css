@@ -1,0 +1,15 @@
+/* XP PANEL — beige */
+.aero-panel {
+  background: #ECE9D8 !important;
+  backdrop-filter: none !important;
+  border-top: 1px solid #ACA899 !important;
+  border-radius: 0 !important;
+  font-family: "Tahoma", sans-serif !important;
+  font-size: 11px !important;
+}
+.aero-panel h2 {
+  font-family: "Tahoma", sans-serif !important;
+  font-weight: 700 !important;
+  color: #0A246A !important;
+  border-color: #ACA899 !important;
+}

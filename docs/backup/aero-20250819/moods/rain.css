@@ -1,0 +1,20 @@
+/* MOOD: rain — solo font + typewriter, card color y titlebar se mantienen */
+[data-mood="rain"] {
+  /* colores NO se tocan — se mantiene color inicial del card */
+  --font-display: "JetBrains Mono", monospace;
+  --font-mono: "JetBrains Mono", monospace;
+}
+[data-mood="rain"] .aero-panel h2 {
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 2.6rem !important;
+  letter-spacing: -0.04em;
+  color: #0c4a6e !important;
+  border-color: #7dd3fc !important;
+}
+[data-mood="rain"] .aero-panel { background: rgba(240,249,255,0.85) !important; }
+[data-mood="rain"] blockquote {
+  border-color: #0ea5e9 !important;
+  background: rgba(14,165,233,0.06) !important;
+  color: #0c4a6e !important;
+}
+[data-mood="rain"] .aero-rain span { color: rgba(14,165,233,0.78) !important; }

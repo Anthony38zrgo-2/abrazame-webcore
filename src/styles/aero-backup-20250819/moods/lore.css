@@ -1,0 +1,21 @@
+/* MOOD: lore — gótico violeta */
+[data-mood="lore"] {
+  --aero-accent: #7c3aed;
+  --aero-accent-strong: #2e1065;
+  --aero-accent-soft: rgba(124,58,237,0.22);
+  --aero-title-from: #2e1065;
+  --aero-title-to: #a78bfa;
+  --aero-glass-bg: rgba(237,233,254,0.26);
+  --aero-panel-bg: rgba(250,245,255,0.85);
+  --aero-text: #2e1065;
+  --font-display: "UnifrakturMaguntia", cursive;
+  --font-mono: "UnifrakturMaguntia", cursive;
+}
+[data-mood="lore"] .aero-panel h2 {
+  font-family: "UnifrakturMaguntia", cursive !important;
+  font-weight: 400;
+  font-size: 3.2rem !important;
+  color: #2e1065 !important;
+  border-color: #c4b5fd !important;
+}
+[data-mood="lore"] blockquote { border-color: #7c3aed !important; background: rgba(124,58,237,0.1) !important; }

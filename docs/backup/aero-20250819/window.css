@@ -1,0 +1,36 @@
+/* =======================================================
+   AERO WINDOW — glass frame (reemplaza win98-window)
+   ======================================================= */
+.aero-window {
+  background: var(--aero-glass-bg);
+  backdrop-filter: blur(var(--aero-blur)) saturate(1.35);
+  -webkit-backdrop-filter: blur(var(--aero-blur)) saturate(1.35);
+  border: 1px solid rgba(255,255,255,0.42);
+  border-radius: var(--aero-radius);
+  box-shadow: 0 12px 40px rgba(10,42,74,0.28), 0 1px 0 rgba(255,255,255,0.65) inset;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  transition: all 700ms cubic-bezier(0.22,1,0.36,1);
+}
+
+/* Highlight gloss superior — quick win 42% 0.38 */
+.aero-window::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 42%;
+  background: var(--aero-glass-highlight);
+  opacity: 0.38;
+  pointer-events: none;
+  border-radius: var(--aero-radius) var(--aero-radius) 0 0;
+  z-index: 1;
+}
+
+/* Fallback sin blur */
+@supports not (backdrop-filter: blur(1px)) {
+  .aero-window {
+    background: rgba(245, 248, 252, 0.92);
+    backdrop-filter: none;
+  }
+}

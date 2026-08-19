@@ -27,7 +27,7 @@
         "svg": "leaf.svg",
         "svgColor": "#d97706",
         "animation": "leaf-drift",
-        "rain": { "count": 36, "symbols": ["🍂","🍁","🍃"], "color": "rgba(180,90,20,0.62)" }
+        "rain": { "count": 42, "symbols": ["⛧","⛧","⛧"], "color": "rgba(120,30,120,0.58)" }
       },
       "cursor": "autumn",
       "useCases": ["atardecer", "cosecha", "recuerdo infancia", "delirio cálido", "otoño"]

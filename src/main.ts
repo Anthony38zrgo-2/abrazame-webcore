@@ -1,11 +1,12 @@
-import './styles/aero/index.css'
-import './styles/aero/layout.css'
-// legacy kept as fallback 1 sprint — remove after aero stable
+// legacy primero (será sobrescrito por paleta pastel)
 import './styles/globals.css'
 import './styles/windows98.css'
 import './styles/layout.css'
 import './styles/rain.css'
 import './styles/titlebars.css'
+import './styles/aero/index.css'
+import './styles/aero/layout.css'
+import './styles/xp/index.css'
 
 import 'material-icons/iconfont/material-icons.css'
 

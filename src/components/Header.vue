@@ -7,10 +7,27 @@ import AeroTitlebar from '@/components/aero/AeroTitlebar.vue'
   <header class="p-3 md:p-4">
     <AeroWindow variant="system">
       <AeroTitlebar variant="system" icon="♥">
-        <span class="font-['Cormorant_Garamond'] text-[15px] md:text-[17px] font-semibold tracking-[0.015em] text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]">
-          ¡Abrázame!, <span class="font-normal italic opacity-90">después del apocalipsis</span>
+        <span class="header-title">
+          ¡Abrázame!, después del apocalipsis
         </span>
       </AeroTitlebar>
     </AeroWindow>
   </header>
 </template>
+
+<style scoped>
+.header-title {
+  font-family: "Times New Roman", "Georgia", serif;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  background: linear-gradient(to right, #FF6B00, #FF0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 6px rgba(255,107,0,0.6)) drop-shadow(1px 1px 0 #000);
+  font-style: italic;
+}
+@media (min-width: 768px) {
+  .header-title { font-size: 17px; }
+}
+</style>

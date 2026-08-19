@@ -1,0 +1,104 @@
+/* =======================================================
+   AERO TITLEBAR — gloss + variantes por data-variant
+   ======================================================= */
+.aero-titlebar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px 8px 14px;
+  min-height: 32px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 550;
+  letter-spacing: 0.015em;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.45);
+  /* gradient por defecto — overwritten por vars */
+  background: linear-gradient(to right, var(--aero-title-from), var(--aero-title-to));
+  border-bottom: 1px solid rgba(255,255,255,0.28);
+  border-radius: var(--aero-radius) var(--aero-radius) 0 0;
+  transition: background var(--aero-transition);
+  overflow: hidden;
+}
+
+/* Gloss reflection */
+.aero-titlebar::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.45), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.aero-titlebar__label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.aero-titlebar__text {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  opacity: 0.96;
+}
+
+.aero-titlebar__controls {
+  display: flex;
+  gap: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Botones Aero: redondo glass con símbolo */
+.aero-title-button {
+  width: 22px;
+  height: 20px;
+  border-radius: 6px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.85), rgba(220,230,240,0.6));
+  border: 1px solid rgba(255,255,255,0.7);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #1a2a3a;
+  cursor: pointer;
+  transition: all 120ms ease;
+}
+
+.aero-title-button:hover {
+  background: linear-gradient(to bottom, #ffffff, #e6eef8);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.22);
+}
+
+.aero-title-button--close {
+  background: linear-gradient(to bottom, #ff8a8a, #d32f2f);
+  border-color: rgba(255,255,255,0.6);
+  color: white;
+}
+
+.aero-title-button--close:hover {
+  background: linear-gradient(to bottom, #ff9a9a, #e53935);
+}
+
+/* Variantes — mapeo desde antiguo titlebars.css, ahora vía vars */
+.aero-titlebar[data-variant="system"]    { --aero-title-from:#0a3a6b; --aero-title-to:#3a9ad9; }
+.aero-titlebar[data-variant="story"]     { --aero-title-from:#02006b; --aero-title-to:#3d7bd6; }
+.aero-titlebar[data-variant="melancholy"]{ --aero-title-from:#0b0a33; --aero-title-to:#2a5a8f; }
+.aero-titlebar[data-variant="lore"]      { --aero-title-from:#2a0a4f; --aero-title-to:#7a2fbf; }
+.aero-titlebar[data-variant="infernal"]  { --aero-title-from:#2a0000; --aero-title-to:#8a1a1a; }
+.aero-titlebar[data-variant="nightmare"] { --aero-title-from:#240000; --aero-title-to:#c00000; }
+.aero-titlebar[data-variant="terminal"]  { --aero-title-from:#001a00; --aero-title-to:#1f8a1f; }
+.aero-titlebar[data-variant="romance"]   { --aero-title-from:#3a003a; --aero-title-to:#d43a7a; }
+.aero-titlebar[data-variant="rain"]      { --aero-title-from:#001133; --aero-title-to:#2a8ab5; }
+.aero-titlebar[data-variant="vhs"]       { --aero-title-from:#111111; --aero-title-to:#6a6a6a; }
+.aero-titlebar[data-variant="occult"]    { --aero-title-from:#1a0508; --aero-title-to:#6a0a1a; }
+.aero-titlebar[data-variant="rgb"]       { background: linear-gradient(90deg, #0a3ad9 0%, #d32f5a 45%, #1f9a5a 85%); }

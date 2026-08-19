@@ -1,0 +1,60 @@
+/* =======================================================
+   AERO BASE — body aurora + webcore vignette
+   ======================================================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  /* Vista aurora + capa cálida otoñal para nostalgia */
+  background:
+    radial-gradient(ellipse 700px 400px at 50% 38%, rgba(251,146,60,0.18), transparent 65%),
+    radial-gradient(ellipse 1200px 600px at 20% -10%, rgba(110, 180, 255, 0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 900px 500px at 85% 0%, rgba(180, 220, 255, 0.32) 0%, transparent 55%),
+    radial-gradient(ellipse 800px 400px at 50% 100%, rgba(100, 160, 220, 0.22) 0%, transparent 60%),
+    linear-gradient(to bottom, #0a2a4a 0%, #2b6ea6 35%, #7ab6e0 70%, #d4ecf8 100%);
+  background-attachment: fixed;
+  background-color: #0a2a4a;
+  background-size: 120% 120%;
+  overflow-x: hidden;
+  font-family: var(--font-display);
+  cursor: var(--aero-cursor);
+  /* sutil mejora de text rendering vs pixelated puro */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Fallback si backdrop-filter no soportado */
+@supports not (backdrop-filter: blur(1px)) {
+  body { background: #1e3a5f; }
+}
+
+/* Vignette webcore sutil */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 65%, rgba(0,0,0,0.35) 100%);
+  opacity: 0.45;
+  z-index: -1;
+}
+/* Grain sutil */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  z-index: -1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.4'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
+}
+
+/* Selección aqua */
+::selection {
+  background: var(--aero-accent);
+  color: white;
+}

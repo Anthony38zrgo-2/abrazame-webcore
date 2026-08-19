@@ -16,19 +16,18 @@
   --aero-glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.28), 0 1px 0 rgba(255, 255, 255, 0.6) inset;
   --aero-glass-highlight: linear-gradient(to bottom, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0) 55%);
 
-  /* Panel — Prosperidad Pastel */
-  --aero-panel-bg: rgba(245,239,230,0.85);
-  --aero-panel-border: rgba(255,255,255,0.5);
-  --aero-glass-bg: rgba(255,214,232,0.28);
+  /* Panel — quick win 0.82 desktop */
+  --aero-panel-bg: rgba(255, 255, 255, 0.82);
+  --aero-panel-border: rgba(255, 255, 255, 0.5);
 
   /* Accent — overwritten per mood */
-  --aero-accent: #9D7CFF;
-  --aero-accent-strong: #4C1D95;
-  --aero-accent-soft: rgba(157,124,255,0.18);
-  --aero-title-from: #4C1D95;
-  --aero-title-to: #9D7CFF;
-  --aero-text: #18181B;
-  --aero-text-muted: #6B7280;
+  --aero-accent: #3a8dde;
+  --aero-accent-strong: #1e5a9c;
+  --aero-accent-soft: rgba(58, 141, 222, 0.15);
+  --aero-title-from: #0a3a6b;
+  --aero-title-to: #3a9ad9;
+  --aero-text: #0e1a2b;
+  --aero-text-muted: #4a5a6e;
 
   /* Cursors */
   --aero-cursor: auto;

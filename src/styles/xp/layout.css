@@ -1,0 +1,15 @@
+/* XP LAYOUT — sin card de fondo (transparente, deja ver body) */
+.aero-layout__content {
+  background: transparent !important;
+  background-image: none !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  position: relative;
+}
+.aero-layout__content::before { display: none !important; }
+.aero-layout__texture {
+  opacity: 0.22 !important;
+  filter: saturate(0.7) brightness(0.95) blur(0.3px) !important;
+}

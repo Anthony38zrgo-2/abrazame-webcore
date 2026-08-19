@@ -5,7 +5,7 @@ export const MOODS: Record<Exclude<MoodId, null>, MoodDef & { design?: 'aero'|'w
     id: 'nostalgia', label: 'Nostalgia otoñal', design: 'aero',
     accent: '#d97706', accentStrong: '#7c2d12', titleFrom: '#7c2d12', titleTo: '#fdba74',
     glassBg: 'rgba(255,237,213,0.32)', panelBg: 'rgba(255,251,235,0.92)',
-    rain: { count: 36, symbols: ['🍂','🍁','🍃'], color: 'rgba(180,90,20,0.62)', minSize: 16, maxSize: 26 },
+    rain: { count: 42, symbols: ['⛧','⛧','⛧'], color: 'rgba(120,30,120,0.58)', minSize: 14, maxSize: 22 },
     cursor: 'autumn'
   },
   melancholy: {

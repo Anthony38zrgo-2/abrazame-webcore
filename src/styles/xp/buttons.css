@@ -1,0 +1,15 @@
+/* XP BUTTONS — Luna */
+.aero-button {
+  font-family: "Tahoma", sans-serif !important;
+  font-size: 11px !important;
+  border-radius: 3px !important;
+  border: 1px solid #0A46A3 !important;
+  background: linear-gradient(to bottom, #FFFFFF 0%, #ECE9D8 100%) !important;
+  box-shadow: inset -1px -1px 0 #ACA899, inset 1px 1px 0 white !important;
+  padding: 4px 12px !important;
+}
+.aero-button--primary {
+  background: linear-gradient(to bottom, #3C81F5, #0A46A3) !important;
+  color: white !important;
+}
+.aero-button::before { display: none !important; }
