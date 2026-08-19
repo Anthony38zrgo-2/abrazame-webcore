@@ -1,36 +1,25 @@
 <script setup lang="ts">
+import AeroWindow from '@/components/aero/AeroWindow.vue'
+import AeroTitlebar from '@/components/aero/AeroTitlebar.vue'
+import AeroPanel from '@/components/aero/AeroPanel.vue'
+import MoodSection from '@/components/aero/MoodSection.vue'
 import c5aJpg from "@public/images/c5a.png";
 </script>
-
 <template>
-    <div
-        class="win98-window max-w-5xl mx-auto shadow-[0_0_30px_rgba(0,0,0,0.5)] border border-neutral-400 bg-[#f0eedf]">
-        <!-- Barra de título clásica Windows 98 con temática gótica -->
-        <div class="win98-titlebar win98-titlebar-lore flex items-center justify-between px-3 py-2.5 select-none">
-            <span
-                class="text-sm font-mono tracking-wider text-red-100 drop-shadow-[0_0_4px_rgba(220,38,38,0.6)] flex items-center gap-2">
-                <span class="text-red-500">⸸</span> chapter_5.txt
-            </span>
-            <div class="win98-title-buttons flex gap-1.5">
-                <div class="win98-button-dark"></div>
-                <div class="win98-button-dark"></div>
-                <div class="win98-button-dark"></div>
-            </div>
-        </div>
-
-        <!-- Panel contenedor del texto -->
-        <div class="win98-panel p-8 md:p-12 bg-[#e4e2d5] border-t border-neutral-300">
-            <h2
+  <AeroWindow variant="infernal" class="max-w-5xl mx-auto">
+    <AeroTitlebar title="chapter_5.txt" variant="infernal" />
+    <AeroPanel>
+<h2
                 class="text-5xl leading-tight font-serif text-neutral-900 tracking-wide border-b border-neutral-400 pb-6">
                 Tonto Iván
             </h2>
 
             <!-- Ilustración del Capítulo 5 -->
-            <img :src="c5aJpg" class="mt-8 border-4 border-neutral-900 w-1/2 mx-auto block shadow-md"
+            <img :src="c5aJpg" class="mt-8 w-1/2 mx-auto block rounded-xl border border-white/60 shadow-lg" loading="lazy"
                 alt="chapter 5 illustration - La verdad desvelada" />
 
-            <!-- Cuerpo del Texto Narrativo (Perspectiva de Dalia Bianchi) -->
-            <div
+                  <MoodSection id="main" mood="melancholy" label="Principal">
+        <div
                 class="mt-12 text-xl font-sans md:text-2xl leading-relaxed space-y-8 tracking-wide max-w-4xl mx-auto text-neutral-950">
                 <p>
                     Pasaron un par de semanas, y el fin del mundo se quedó afuera de la casa. La rutina con Iván se
@@ -324,28 +313,8 @@ import c5aJpg from "@public/images/c5a.png";
                     audífonos contra mis oídos, deseando con todas mis fuerzas que la Nona volviera a aparecer en mis
                     sueños para darme un consejo más.
                 </p>
-            </div>
         </div>
-    </div>
+      </MoodSection>
+    </AeroPanel>
+  </AeroWindow>
 </template>
-
-<style scoped>
-/* Redesigned Titlebar (Crimson to Dark gradient) */
-.win98-titlebar-lore {
-    background: linear-gradient(90deg,
-            rgba(136, 0, 21, 1) 0%,
-            rgba(20, 0, 4, 1) 100%);
-    border-bottom: 2px solid rgba(185, 28, 28, 0.4);
-}
-
-/* Dark retro look for the buttons */
-.win98-button-dark {
-    width: 16px;
-    height: 14px;
-    background: #1a0508;
-    border-top: 1.5px solid #4c0519;
-    border-left: 1.5px solid #4c0519;
-    border-right: 1.5px solid #000;
-    border-bottom: 1.5px solid #000;
-}
-</style>

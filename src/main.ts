@@ -1,3 +1,6 @@
+import './styles/aero/index.css'
+import './styles/aero/layout.css'
+// legacy kept as fallback 1 sprint — remove after aero stable
 import './styles/globals.css'
 import './styles/windows98.css'
 import './styles/layout.css'

@@ -1,0 +1,200 @@
+{
+  "moods": {
+    "nostalgia": {
+      "label": "Nostalgia otoñal",
+      "description": "Atardecer, cosecha, recuerdo cálido. Hojas cayendo, luz ámbar.",
+      "design": "aero",
+      "tokens": {
+        "accent": "#d97706",
+        "accentStrong": "#7c2d12",
+        "accentSoft": "rgba(217,119,6,0.18)",
+        "titleFrom": "#7c2d12",
+        "titleTo": "#fdba74",
+        "glassBg": "rgba(255,237,213,0.28)",
+        "panelBg": "rgba(255,251,235,0.88)",
+        "text": "#431407",
+        "fontDisplay": "\"Cormorant Garamond\", Georgia, serif",
+        "fontMono": "\"Cormorant Garamond\", serif"
+      },
+      "tailwind": {
+        "panel": "bg-amber-50/90 border-amber-200",
+        "titlebar": "from-amber-900 to-orange-300",
+        "blockquote": "border-amber-600 bg-amber-500/10 text-amber-900",
+        "heading": "text-amber-950 font-serif tracking-wide",
+        "fontClass": "font-['Cormorant_Garamond']"
+      },
+      "assets": {
+        "svg": "leaf.svg",
+        "svgColor": "#d97706",
+        "animation": "leaf-drift",
+        "rain": { "count": 36, "symbols": ["🍂","🍁","🍃"], "color": "rgba(180,90,20,0.62)" }
+      },
+      "cursor": "autumn",
+      "useCases": ["atardecer", "cosecha", "recuerdo infancia", "delirio cálido", "otoño"]
+    },
+    "rain": {
+      "label": "Lluvia torrencial",
+      "description": "Tormenta, zinc, iglesia. Gotas verticales, frío azul. Choque Win98.",
+      "design": "win98",
+      "tokens": {
+        "accent": "#0ea5e9",
+        "accentStrong": "#0c2a4a",
+        "accentSoft": "rgba(14,165,233,0.18)",
+        "titleFrom": "#0c2a4a",
+        "titleTo": "#38bdf8",
+        "glassBg": "rgba(224,242,254,0.26)",
+        "panelBg": "rgba(240,249,255,0.9)",
+        "text": "#0c2a4a",
+        "fontDisplay": "\"JetBrains Mono\", monospace",
+        "fontMono": "\"JetBrains Mono\", monospace"
+      },
+      "tailwind": {
+        "panel": "bg-sky-50/90 border-sky-200",
+        "blockquote": "border-sky-600 bg-sky-500/10 text-sky-900",
+        "heading": "text-sky-950 font-mono",
+        "fontClass": "font-mono"
+      },
+      "assets": {
+        "svg": "rain.svg",
+        "svgColor": "#0ea5e9",
+        "animation": "fall-fast",
+        "rain": { "count": 140, "symbols": ["│","╎","┆"], "color": "rgba(14,165,233,0.75)" }
+      },
+      "useCases": ["lluvia", "tormenta", "iglesia encharcada", "noche"]
+    },
+    "lore": {
+      "label": "Lore / Weirdcore",
+      "description": "Mural conejos, cruces, misterio. Gótico suave.",
+      "design": "aero",
+      "tokens": {
+        "accent": "#7c3aed",
+        "accentStrong": "#2e1065",
+        "accentSoft": "rgba(124,58,237,0.18)",
+        "titleFrom": "#2e1065",
+        "titleTo": "#a78bfa",
+        "glassBg": "rgba(237,233,254,0.24)",
+        "panelBg": "rgba(250,245,255,0.88)",
+        "text": "#2e1065",
+        "fontDisplay": "\"UnifrakturMaguntia\", cursive",
+        "fontMono": "\"UnifrakturMaguntia\", cursive"
+      },
+      "tailwind": {
+        "panel": "bg-violet-50/90 border-violet-200",
+        "blockquote": "border-violet-700 bg-violet-500/10 text-violet-900",
+        "heading": "text-violet-950",
+        "fontClass": "font-['UnifrakturMaguntia']"
+      },
+      "assets": {
+        "svg": "cross-inverted.svg",
+        "svgColor": "#7c3aed",
+        "animation": "float-slow",
+        "rain": { "count": 90, "symbols": ["✝","☩","✞"], "color": "rgba(124,58,237,0.55)" }
+      },
+      "useCases": ["mural", "conejo arcilla", "iglesia", "símbolo"]
+    },
+    "infernal": {
+      "label": "Infernal",
+      "description": "Rojo sangre, pentagrama, ira. Fondo oscuro con glow rojo. Choque Win98.",
+      "design": "win98",
+      "tokens": {
+        "accent": "#dc2626",
+        "accentStrong": "#450a0a",
+        "accentSoft": "rgba(220,38,38,0.22)",
+        "titleFrom": "#450a0a",
+        "titleTo": "#f87171",
+        "glassBg": "rgba(254,226,226,0.18)",
+        "panelBg": "rgba(254,242,242,0.9)",
+        "text": "#450a0a",
+        "fontDisplay": "\"Creepster\", cursive",
+        "fontMono": "\"Creepster\", cursive"
+      },
+      "tailwind": {
+        "panel": "bg-red-50/90 border-red-300",
+        "blockquote": "border-red-700 bg-red-500/15 text-red-900",
+        "heading": "text-red-950",
+        "fontClass": "font-['Creepster'] text-5xl"
+      },
+      "assets": {
+        "svg": "pentagram.svg",
+        "svgColor": "#dc2626",
+        "animation": "pulse-glow",
+        "rain": { "count": 60, "symbols": ["⛧","✞"], "color": "rgba(220,38,38,0.7)" }
+      },
+      "useCases": ["revelación", "ira", "sangre", "ritual"]
+    },
+    "vhs": {
+      "label": "VHS / Lost Media",
+      "description": "Ruido, motor, cinta vieja. Gris, monoespaciado, scanline. Choque Win98.",
+      "design": "win98",
+      "tokens": {
+        "accent": "#52525b",
+        "accentStrong": "#18181b",
+        "accentSoft": "rgba(82,82,91,0.16)",
+        "titleFrom": "#18181b",
+        "titleTo": "#a1a1aa",
+        "glassBg": "rgba(244,244,245,0.22)",
+        "panelBg": "rgba(250,250,250,0.9)",
+        "text": "#18181b",
+        "fontDisplay": "\"VT323\", monospace",
+        "fontMono": "\"VT323\", monospace"
+      },
+      "tailwind": {
+        "panel": "bg-zinc-100/90 border-zinc-300",
+        "blockquote": "border-zinc-600 bg-zinc-500/10 text-zinc-800",
+        "heading": "text-zinc-900 font-['VT323'] tracking-widest",
+        "fontClass": "font-['VT323']"
+      },
+      "assets": {
+        "svg": "eye-red.svg",
+        "svgColor": "#52525b",
+        "animation": "glitch",
+        "rain": { "count": 30, "symbols": ["—","–"], "color": "rgba(82,82,91,0.35)" }
+      },
+      "useCases": ["motor", "glitch", "cinta", "transición"]
+    },
+    "nightmare": {
+      "label": "Pesadilla",
+      "description": "Maniquíes, polvo. Ojos rojos múltiples. Choque Win98.",
+      "design": "win98",
+      "tokens": {
+        "accent": "#991b1b",
+        "accentStrong": "#1a0000",
+        "accentSoft": "rgba(153,27,27,0.22)",
+        "titleFrom": "#1a0000",
+        "titleTo": "#ef4444",
+        "glassBg": "rgba(254,226,226,0.2)",
+        "panelBg": "rgba(255,241,242,0.9)",
+        "text": "#1a0000",
+        "fontDisplay": "\"Creepster\", cursive"
+      },
+      "tailwind": {
+        "panel": "bg-red-950/10 border-red-900",
+        "blockquote": "border-red-800 bg-red-900/20 text-red-950",
+        "fontClass": "font-['Creepster']"
+      },
+      "assets": {
+        "svg": "eye-red.svg",
+        "svgColor": "#dc2626",
+        "animation": "blink",
+        "rain": { "count": 80, "symbols": ["👁"], "color": "rgba(220,38,38,0.5)" }
+      },
+      "useCases": ["pesadilla", "maniquíes", "polvo"]
+    }
+  },
+  "chapters": {
+    "#/": { "base": "nostalgia", "sections": [{ "id": "intro", "mood": "nostalgia", "scene": "intro otoñal" }] },
+    "#/c1": {
+      "base": "lore",
+      "sections": [
+        { "id": "atardecer", "mood": "nostalgia", "scene": "atardecer + cosecha café", "tailwind": "bg-amber-50" },
+        { "id": "lluvia", "mood": "rain", "scene": "refugio + lluvia zinc" },
+        { "id": "motor", "mood": "vhs", "scene": "motor + glitch" }
+      ]
+    },
+    "#/c2": { "base": "lore", "sections": [{ "id": "main", "mood": "lore", "scene": "mural conejos" }] },
+    "#/c3": { "base": "lore", "sections": [{ "id": "main", "mood": "lore" }] },
+    "#/c4": { "base": "nightmare", "sections": [{ "id": "main", "mood": "nightmare" }] },
+    "#/c5": { "base": "infernal", "sections": [{ "id": "main", "mood": "infernal" }] },
+    "#/c6": { "base": "vhs", "sections": [{ "id": "main", "mood": "vhs" }] }
+  }
+}

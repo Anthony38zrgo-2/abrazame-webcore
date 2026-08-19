@@ -1,60 +1,24 @@
 <script setup lang="ts">
 import liminalJpg from '@public/textures/liminal.jpg'
+import AeroWindow from '@/components/aero/AeroWindow.vue'
+import AeroTitlebar from '@/components/aero/AeroTitlebar.vue'
+import AeroPanel from '@/components/aero/AeroPanel.vue'
+import AeroButton from '@/components/aero/AeroButton.vue'
+import MoodSection from '@/components/aero/MoodSection.vue'
 </script>
 
 <template>
-  <div class="win98-window max-w-5xl mx-auto">
-    <div class="win98-titlebar win98-titlebar-rgb">
-      <span>
-        intro.txt
-      </span>
-    </div>
-
-    <div class="win98-panel p-8 text-black">
-      <h2 class="text-5xl">
-        Soledad, luto, pensamientos y náuseas.
-      </h2>
-
-      <p class="text-3xl mt-6 leading-relaxed">
-        Sin nadie a quien abrazar.
-        Sin nadie a quien amar.
-        ¿Algún día cambiará?
-      </p>
-
-      <img
-        :src="liminalJpg"
-        class="mt-8 border-4 border-black w-full"
-        alt="liminal"
-      />
-
-      <div class="mt-10 flex justify-center">
-        <a
-          href="#/c1"
-          class="
-            inline-flex
-            items-center
-            gap-4
-            px-6
-            py-4
-            border-2
-            border-red-700
-            bg-black
-            text-red-500
-            text-2xl
-            hover:bg-red-950
-            hover:text-red-300
-            transition-all
-            duration-300
-          "
-        >
-          <span class="text-4xl">✞</span>
-          <span>LEER CAPÍTULO UNO</span>
-          <span class="text-4xl">✞</span>
-        </a>
-      </div>
-    </div>
-  </div>
+  <AeroWindow variant="rgb" mood="nostalgia" class="max-w-5xl mx-auto">
+    <AeroTitlebar title="intro.txt" variant="rgb" />
+    <AeroPanel>
+      <MoodSection id="intro" mood="nostalgia" label="Intro otoñal">
+        <h2 class="text-5xl font-light tracking-tight text-slate-900">Soledad, luto, pensamientos y náuseas.</h2>
+        <p class="text-2xl mt-6 leading-relaxed text-slate-700">Sin nadie a quien abrazar.<br />Sin nadie a quien amar.<br />¿Algún día cambiará?</p>
+        <img :src="liminalJpg" class="mt-8 w-full rounded-xl border border-white/60 shadow-lg object-cover" alt="liminal" loading="lazy" />
+        <div class="mt-10 flex justify-center">
+          <AeroButton variant="primary" href="#/c1"><span class="text-xl">✞</span> LEER CAPÍTULO UNO <span class="text-xl">✞</span></AeroButton>
+        </div>
+      </MoodSection>
+    </AeroPanel>
+  </AeroWindow>
 </template>
-
-<style scoped>
-</style>

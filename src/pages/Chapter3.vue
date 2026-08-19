@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import AeroWindow from '@/components/aero/AeroWindow.vue'
+import AeroTitlebar from '@/components/aero/AeroTitlebar.vue'
+import AeroPanel from '@/components/aero/AeroPanel.vue'
+import MoodSection from '@/components/aero/MoodSection.vue'
 import { ref } from 'vue';
 import c3aJpg from "@public/images/c3a.png";
 
@@ -6,36 +10,21 @@ import c3aJpg from "@public/images/c3a.png";
 const notaSignificadoRevelada = ref(true);
 const notaSofiaRevelada = ref(true);
 </script>
-
 <template>
-    <div
-        class="win98-window max-w-5xl mx-auto shadow-[0_0_30px_rgba(0,0,0,0.5)] border border-neutral-400 bg-[#f0eedf]">
-        <!-- Barra de título clásica Windows 98 con temática gótica -->
-        <div class="win98-titlebar win98-titlebar-lore flex items-center justify-between px-3 py-2.5 select-none">
-            <span
-                class="text-sm font-mono tracking-wider text-red-100 drop-shadow-[0_0_4px_rgba(220,38,38,0.6)] flex items-center gap-2">
-                <span class="text-red-500">⸸</span> chapter_3.txt
-            </span>
-            <div class="win98-title-buttons flex gap-1.5">
-                <div class="win98-button-dark"></div>
-                <div class="win98-button-dark"></div>
-                <div class="win98-button-dark"></div>
-            </div>
-        </div>
-
-        <!-- Panel contenedor del texto -->
-        <div class="win98-panel p-8 md:p-12 bg-[#e4e2d5] border-t border-neutral-300">
-            <h2
+  <AeroWindow variant="romance" class="max-w-5xl mx-auto">
+    <AeroTitlebar title="chapter_3.txt" variant="romance" />
+    <AeroPanel>
+<h2
                 class="text-5xl leading-tight font-serif text-neutral-900 tracking-wide border-b border-neutral-400 pb-6">
                 El conejo de Prosperidad
             </h2>
 
             <!-- Ilustración del Capítulo 3 -->
-            <img :src="c3aJpg" class="mt-8 border-4 border-neutral-900 w-1/2 mx-auto block shadow-md"
+            <img :src="c3aJpg" class="mt-8 w-1/2 mx-auto block rounded-xl border border-white/60 shadow-lg" loading="lazy"
                 alt="chapter 3 illustration - La iglesia y el refugio" />
 
-            <!-- Cuerpo del Texto Narrativo (Perspectiva de Dalia) -->
-            <div
+                  <MoodSection id="main" mood="melancholy" label="Principal">
+        <div
                 class="mt-12 text-xl font-sans md:text-2xl leading-relaxed space-y-8 tracking-wide max-w-4xl mx-auto text-neutral-950">
                 <p>
                     Durante años había recorrido Prosperidad completamente sola. Había buscado comida, recogido leña,
@@ -328,45 +317,8 @@ const notaSofiaRevelada = ref(true);
                     que debía reflexionar en mi casa, mirando el techo como solía hacerlo... pero esta vez, en compañía
                     de alguien más.
                 </p>
-            </div>
         </div>
-    </div>
+      </MoodSection>
+    </AeroPanel>
+  </AeroWindow>
 </template>
-
-<style scoped>
-/* Redesigned Titlebar (Crimson to Dark gradient) */
-.win98-titlebar-lore {
-    background: linear-gradient(90deg,
-            rgba(136, 0, 21, 1) 0%,
-            rgba(20, 0, 4, 1) 100%);
-    border-bottom: 2px solid rgba(185, 28, 28, 0.4);
-}
-
-/* Dark retro look for the buttons */
-.win98-button-dark {
-    width: 16px;
-    height: 14px;
-    background: #1a0508;
-    border-top: 1.5px solid #4c0519;
-    border-left: 1.5px solid #4c0519;
-    border-right: 1.5px solid #000;
-    border-bottom: 1.5px solid #000;
-}
-
-/* Transición suave para la revelación del texto */
-.animate-fade-in {
-    animation: fadeIn 0.5s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-5px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-</style>

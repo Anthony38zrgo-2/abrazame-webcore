@@ -6,7 +6,7 @@ import FloatingLoreButton from '@/components/FloatingLoreButton.vue'
 </script>
 
 <template>
-  <div class="layout-wrapper">
+  <div class="aero-layout">
     <Header />
     <Body />
     <Footer />

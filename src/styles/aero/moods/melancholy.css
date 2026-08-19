@@ -1,0 +1,10 @@
+/* MOOD: melancholy — azul profundo, frío */
+[data-mood="melancholy"] {
+  --aero-accent: #3a6ea8;
+  --aero-accent-strong: #0b1e33;
+  --aero-accent-soft: rgba(58,110,168,0.18);
+  --aero-title-from: #0b0a33;
+  --aero-title-to: #2a5a8f;
+  --aero-glass-bg: rgba(210, 225, 255, 0.16);
+  --aero-panel-bg: rgba(240, 245, 255, 0.76);
+}

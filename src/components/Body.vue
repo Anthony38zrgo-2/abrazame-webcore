@@ -1,32 +1,24 @@
 <script setup lang="ts">
-import Rain from '@/components/Rain.vue'
-import Navigation from '@/components/Navigation.vue'
+import AeroRain from '@/components/aero/AeroRain.vue'
+import AeroNavigation from '@/components/aero/AeroNavigation.vue'
 import { currentComponent } from '@/router'
+import { useMood } from '@/composables/useMood'
+
+useMood()
 </script>
 
 <template>
-  <main class="layout-body">
-    <!-- Left Texture -->
-    <aside class="layout-texture"></aside>
+  <AeroRain />
+  <main class="aero-layout__body">
+    <aside class="aero-layout__texture" aria-hidden="true"></aside>
 
-    <!-- Main Content -->
-    <section class="layout-content">
-      <!-- RAIN_COMPONENT -->
-      <Rain :count="180" :symbols="['✝', '☩', '✞', '†', '☨']" />
-
+    <section class="aero-layout__content">
       <div class="relative z-10">
-        <!-- DYNAMIC_CONTENT -->
         <component :is="currentComponent" />
-
-        <!-- NAVIGATION_COMPONENT -->
-        <Navigation />
+        <AeroNavigation />
       </div>
     </section>
 
-    <!-- Right Texture -->
-    <aside class="layout-texture"></aside>
+    <aside class="aero-layout__texture" aria-hidden="true"></aside>
   </main>
 </template>
-
-<style scoped>
-</style>
