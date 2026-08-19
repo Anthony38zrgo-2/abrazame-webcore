@@ -18,7 +18,7 @@
 }
 
 .aero-layout__texture {
-  background-image: url('@public/textures/cover1.jpg');
+  background-image: url('/textures/cover1.jpg');
   background-repeat: repeat-y;
   background-size: 260px auto;
   background-position: top center;
