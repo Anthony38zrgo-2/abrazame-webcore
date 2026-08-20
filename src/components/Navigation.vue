@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { currentHash, currentChapterNumber } from '@/router'
+import { currentHash, currentChapterNumber } from '@/router/hash'
 
 // Definimos el total de capítulos publicados para evitar enlaces rotos
 const TOTAL_CHAPTERS = 6
@@ -75,34 +75,55 @@ const nextLabel = computed(() => {
 </template>
 
 <style scoped>
-/* Botón clásico de Windows 98 pero con paleta oscura y gótica */
+/* PORTAL 2004 — botón web antigua, sólido, borde duro */
 .win98-nav-btn {
-  background: #2a0c10;
-  /* Fondo rojizo oscuro */
-  color: #fca5a5;
-  /* Texto rosado pálido */
-  border-top: 2px solid #4c111a;
-  border-left: 2px solid #4c111a;
-  border-right: 2px solid #000000;
-  border-bottom: 2px solid #000000;
-  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.1);
+  background: #E0E0E0 !important;
+  background-image: none !important;
+  color: #222222 !important;
+  border: 2px solid #000000 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  font-family: Verdana, Arial, Tahoma, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  padding: 3px 8px !important;
+  gap: 4px !important;
+  text-decoration: none !important;
+  line-height: 1 !important;
 }
-
-/* Efecto 'Click' / Deprimido de Windows 98 al pasar el cursor o hacer click */
-.win98-nav-btn:hover:active {
-  border-top: 2px solid #000000;
-  border-left: 2px solid #000000;
-  border-right: 2px solid #4c111a;
-  border-bottom: 2px solid #4c111a;
-  box-shadow: none;
-  padding-top: 9px;
-  padding-left: 17px;
-  padding-bottom: 7px;
-  padding-right: 15px;
+.win98-nav-btn span {
+  font-size: 11px !important;
+  color: #222222 !important;
 }
-
 .win98-nav-btn:hover {
-  background: #3f1218;
-  color: #fee2e2;
+  background: #FFFFFF !important;
+  color: #222222 !important;
+}
+.win98-nav-btn:hover:active {
+  border: 2px solid #000000 !important;
+  box-shadow: inset 1px 1px 0 rgba(0,0,0,0.4) !important;
+  padding: 3px 8px !important;
+}
+/* Next button destacado azul portal */
+.win98-nav-btn[href*="#/c"] {
+  background: #2874D8 !important;
+  color: #FFFFFF !important;
+}
+.win98-nav-btn[href*="#/c"] span {
+  color: #FFFFFF !important;
+}
+.win98-nav-btn[href*="#/c"]:hover {
+  background: #1F5FB0 !important;
+  color: #FFFFFF !important;
+}
+/* Continuará — caja portal simple */
+div.bg-\[\#e4e2d5\] {
+  background: #FFFFFF !important;
+  border: 1px solid #000000 !important;
+  border-radius: 4px !important;
+  color: #222222 !important;
+  font-family: Verdana, sans-serif !important;
+  font-size: 10px !important;
+  padding: 4px 6px !important;
 }
 </style>

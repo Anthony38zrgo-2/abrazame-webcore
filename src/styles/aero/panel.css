@@ -1,31 +1,125 @@
-/* =======================================================
-   AERO PANEL — contenido translúcido
-   ======================================================= */
+/* PORTAL 2004 PANEL — blanco sólido, denso */
 .aero-panel {
-  position: relative;
-  z-index: 2;
-  background: var(--aero-panel-bg);
-  backdrop-filter: blur(var(--aero-blur-panel)) saturate(1.15);
-  -webkit-backdrop-filter: blur(var(--aero-blur-panel)) saturate(1.15);
-  border-top: 1px solid var(--aero-panel-border);
-  border-radius: 0 0 var(--aero-radius) var(--aero-radius);
-  transition: background var(--aero-transition);
+  position: relative !important;
+  z-index: 1 !important;
+  background: #FFFFFF !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-top: 2px solid #000000 !important;
+  border-radius: 0 0 6px 6px !important;
+  transition: none !important;
+  padding: 8px !important;
+  font-family: Verdana, Arial, Tahoma, sans-serif !important;
+  font-size: 11px !important;
+  line-height: 1.5 !important;
+  color: #222222 !important;
 }
 
 .aero-panel--solid {
-  background: rgba(252, 252, 250, 0.96);
+  background: #FFFFFF !important;
 }
 
-/* Tipografía dentro del panel hereda vars */
 .aero-panel h2 {
-  font-family: var(--font-display);
-  color: var(--aero-text);
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #222222 !important;
+  border-bottom: 2px solid #C000D8 !important;
+  padding-bottom: 4px !important;
+  margin: 0 0 8px 0 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+}
+
+.aero-panel h2 + * {
+  margin-top: 6px !important;
 }
 
 .aero-panel p {
-  color: #1a2535;
+  color: #222222 !important;
+  font-family: Verdana, Arial, Tahoma, sans-serif !important;
+  font-size: 11px !important;
+  line-height: 1.5 !important;
+  margin: 6px 0 !important;
+}
+
+.aero-panel a {
+  color: #0000FF !important;
+  text-decoration: underline !important;
+}
+.aero-panel a:hover {
+  color: #C000D8 !important;
+}
+
+/* Blockquote portal */
+.aero-panel blockquote {
+  border-left: 3px solid #2874D8 !important;
+  background: #E6F0FF !important;
+  background-image: none !important;
+  padding: 6px 8px !important;
+  margin: 8px 0 !important;
+  font-family: Verdana, Arial, Tahoma, sans-serif !important;
+  font-size: 11px !important;
+  color: #222222 !important;
+  border-radius: 0 !important;
 }
 
 @supports not (backdrop-filter: blur(1px)) {
-  .aero-panel { background: #fdfcfa; }
+  .aero-panel { background: #FFFFFF !important; }
+}
+
+/* Imágenes dentro del panel — borde duro portal */
+.aero-panel img {
+  border: 2px solid #000000 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+
+/* Inner padding del AeroPanel.vue — compacto 8px, no 32px */
+.aero-panel > div {
+  padding: 8px !important;
+}
+
+/* Sobrescribe utilidades Tailwind grandes dentro del panel para densidad portal */
+.aero-panel .p-5,
+.aero-panel .p-6,
+.aero-panel .p-8,
+.aero-panel .p-12,
+.aero-panel .px-6,
+.aero-panel .px-8,
+.aero-panel .py-10,
+.aero-panel .py-6 {
+  padding: 8px !important;
+}
+.aero-panel .mt-12,
+.aero-panel .mt-10,
+.aero-panel .mt-8,
+.aero-panel .mt-6 {
+  margin-top: 8px !important;
+}
+.aero-panel .mb-4 { margin-bottom: 4px !important; }
+.aero-panel .my-6,
+.aero-panel .my-8,
+.aero-panel .my-10 {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+.aero-panel .space-y-8 > * + *,
+.aero-panel .space-y-6 > * + * {
+  margin-top: 8px !important;
+}
+
+/* Títulos grandes de capítulos — forzar 14px */
+.aero-panel .text-5xl {
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+}
+.aero-panel .text-xl,
+.aero-panel .text-2xl,
+.aero-panel .text-\[17\.5px\],
+.aero-panel .text-\[18px\],
+.aero-panel .md\:text-2xl {
+  font-size: 11px !important;
+  line-height: 1.5 !important;
 }

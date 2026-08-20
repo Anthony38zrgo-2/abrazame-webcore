@@ -1,3 +1,12 @@
-/* XP EFFECTS — no glass, keep rain behind */
-.aero-rain { z-index: 0 !important; }
-.aero-glow { box-shadow: 0 2px 6px rgba(0,0,0,0.2) !important; }
+/* PORTAL 2004 EFFECTS — XP neutralizado */
+.aero-rain {
+  z-index: 0 !important;
+  opacity: 0.3 !important;
+}
+.aero-rain span {
+  filter: none !important;
+  text-shadow: none !important;
+}
+.aero-glow {
+  box-shadow: none !important;
+}

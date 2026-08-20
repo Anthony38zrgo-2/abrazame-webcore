@@ -4,7 +4,7 @@ import { chromium } from 'playwright';
 import fs from 'fs';
 import path from 'path';
 
-const BASE_URL = process.env.BASE_URL || 'http://127.0.0.1:5173/abrazame-webcore/';
+const BASE_URL = process.env.BASE_URL || process.env.BASE || 'http://127.0.0.1:5173/abrazame-webcore/';
 
 const VIEWPORTS = [
   { name: 'iphone-se', width: 375, height: 667 },

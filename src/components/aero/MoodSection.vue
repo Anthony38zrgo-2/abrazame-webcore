@@ -8,27 +8,35 @@ interface Props {
   mood: MoodId
   label?: string
 }
+
 const props = defineProps<Props>()
 const el = ref<HTMLElement | null>(null)
 
 onMounted(() => {
   registerSection(props.id, props.mood)
-  // asegurar que el observer lo vea
-  setTimeout(() => {
-    const obs = (window as any).__aeroObserver
-    if (obs && el.value) obs.observe(el.value)
-  }, 200)
 })
 
-onUnmounted(() => unregisterSection(props.id))
+onUnmounted(() => {
+  unregisterSection(props.id)
+})
 </script>
 
 <template>
-  <section ref="el" :id="id" :data-mood="mood ?? undefined" :data-section-id="id" :aria-label="label" class="scroll-mt-8 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]">
+  <section
+    ref="el"
+    :id="id"
+    :data-mood="mood ?? undefined"
+    :data-section-id="id"
+    :aria-label="label"
+    class="scroll-mt-2"
+  >
     <slot />
   </section>
+</template>
 
 <style scoped>
-section { transition: background-color 700ms ease, color 700ms ease, border-color 700ms ease, font-family 400ms ease, filter 700ms ease; }
+section {
+  transition: none !important;
+  scroll-margin-top: 8px !important;
+}
 </style>
-</template>

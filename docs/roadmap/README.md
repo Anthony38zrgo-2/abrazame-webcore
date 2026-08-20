@@ -1,7 +1,7 @@
 # Roadmap
 
-Esta carpeta concentra la documentación viva del proyecto. Cada archivo es un plan de una feature mayor.
+Esta carpeta concentra la documentación viva del proyecto. Cada archivo describe una feature o subsistema mayor.
 
-- [GIFs Webcore — Curaduría manual](./GIFS_WEBCORE.md) — Cómo incluir GIFs webcore manualmente desde GifCities / Archive.org / Neocities sin depender de APIs.
-- (próximamente) `AERO_MIGRATION.md` — Migración Win98 → Vista Aero ya ejecutada (ver `git log adba6d1`).
-- (próximamente) `MOODS_SYSTEM.md` — Sistema de moods reactivo con `moods.json`.
+- [GIFs Webcore — Curaduría manual](./GIFS_WEBCORE.md) — Inclusión manual de GIFs webcore desde fuentes curadas, sin depender de APIs.
+- [Mood System](./MOODS_SYSTEM.md) — Contrato de moods, routing, secciones, UI facade y QA.
+- La migración Win98 → Aero quedó registrada en el historial de Git y en `docs/migration/` / `docs/backup/`.

@@ -33,6 +33,52 @@ const open = ref(false)
 </template>
 
 <style scoped>
-.fade-enter-active,.fade-leave-active{transition: opacity 0.3s ease, transform 0.3s ease;}
-.fade-enter-from,.fade-leave-to{opacity:0; transform: scale(0.95) translateY(10px);}
+.fade-enter-active,.fade-leave-active{transition: none !important;}
+.fade-enter-from,.fade-leave-to{opacity:0; transform: none !important;}
+
+/* Tooltip portal — amarillo post-it, borde duro */
+:deep(.absolute.bottom-24) {
+  background: #FFFFCC !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  color: #222222 !important;
+  border: 1px solid #000000 !important;
+  border-radius: 4px !important;
+  padding: 4px 6px !important;
+  font-family: Verdana, Arial, Tahoma, sans-serif !important;
+  font-size: 10px !important;
+  box-shadow: none !important;
+}
+
+/* Botón romero — portal sólido */
+:deep(.aero-button--glass) {
+  background: #E0E0E0 !important;
+  border: 2px solid #000000 !important;
+  border-radius: 4px !important;
+  padding: 2px !important;
+  box-shadow: none !important;
+}
+:deep(.aero-button--glass img) {
+  width: 48px !important;
+  height: 48px !important;
+  border: 1px solid #000000 !important;
+  border-radius: 2px !important;
+  object-fit: cover !important;
+}
+
+/* Popup — ancho compacto portal, texto 11px */
+:deep(.w-\[420px\]) {
+  width: 280px !important;
+}
+:deep(.aero-panel) {
+  background: #FFFFFF !important;
+  font-size: 11px !important;
+  line-height: 1.4 !important;
+  padding: 6px !important;
+}
+:deep(.aero-panel p) {
+  font-size: 11px !important;
+  margin: 4px 0 !important;
+}
 </style>

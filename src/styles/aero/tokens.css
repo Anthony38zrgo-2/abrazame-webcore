@@ -1,52 +1,55 @@
-/* =======================================================
-   AERO TOKENS — Windows Vista 2006 Lost Media
-   Glass, aurora, webcore weirdcore vaporwave
-   ======================================================= */
+/* PORTAL 2004 TOKENS — verde sólido, sin glass */
 :root {
-  /* Radii & blur */
-  --aero-radius: 12px;
-  --aero-radius-sm: 8px;
-  --aero-blur: 18px;
-  --aero-blur-panel: 10px;
-  --aero-transition: 600ms cubic-bezier(0.22, 1, 0.36, 1);
+  /* Radii — ligeramente redondeado, no moderno */
+  --aero-radius: 6px;
+  --aero-radius-sm: 4px;
+  --aero-blur: 0px;
+  --aero-blur-panel: 0px;
+  --aero-transition: 0ms;
 
-  /* Glass */
-  --aero-glass-bg: rgba(255, 255, 255, 0.18);
-  --aero-glass-border: rgba(255, 255, 255, 0.38);
-  --aero-glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.28), 0 1px 0 rgba(255, 255, 255, 0.6) inset;
-  --aero-glass-highlight: linear-gradient(to bottom, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0) 55%);
+  /* Superficies sólidas */
+  --aero-glass-bg: #3737D8;
+  --aero-glass-border: #000000;
+  --aero-glass-shadow: none;
+  --aero-glass-highlight: none;
 
-  /* Panel — Prosperidad Pastel */
-  --aero-panel-bg: rgba(245,239,230,0.85);
-  --aero-panel-border: rgba(255,255,255,0.5);
-  --aero-glass-bg: rgba(255,214,232,0.28);
+  --aero-panel-bg: #FFFFFF;
+  --aero-panel-border: #000000;
 
-  /* Accent — overwritten per mood */
-  --aero-accent: #9D7CFF;
-  --aero-accent-strong: #4C1D95;
-  --aero-accent-soft: rgba(157,124,255,0.18);
-  --aero-title-from: #4C1D95;
-  --aero-title-to: #9D7CFF;
-  --aero-text: #18181B;
-  --aero-text-muted: #6B7280;
+  /* Acento portal */
+  --aero-accent: #C000D8;
+  --aero-accent-strong: #5C34B7;
+  --aero-accent-soft: #C000D8;
+  --aero-title-from: #C000D8;
+  --aero-title-to: #C000D8;
+  --aero-text: #222222;
+  --aero-text-muted: #444444;
 
-  /* Cursors */
+  --portal-green: #46BD73;
+  --portal-blue: #3737D8;
+  --portal-blue-nav: #2874D8;
+  --portal-violet: #5C34B7;
+  --portal-magenta: #C000D8;
+  --portal-white: #FFFFFF;
+  --portal-text: #222222;
+
   --aero-cursor: auto;
 
-  /* Fonts — por mood (cada mood sobrescribe) */
-  --font-display: "Inter", "Segoe UI", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", "Consolas", monospace;
-  --font-serif: "Cormorant Garamond", Georgia, serif;
-  --font-vhs: "VT323", monospace;
-  --font-lore: "UnifrakturMaguntia", cursive;
-  --font-horror: "Creepster", cursive;
+  /* Tipografía portal 2004 — Verdana compacta */
+  --font-display: Verdana, Arial, Tahoma, sans-serif;
+  --font-mono: Verdana, Arial, Tahoma, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-vhs: Verdana, Arial, Tahoma, sans-serif;
+  --font-lore: Georgia, "Times New Roman", serif;
+  --font-horror: Georgia, "Times New Roman", serif;
 }
 
-/* Responsive blur */
 @media (max-width: 768px) {
-  :root { --aero-blur: 12px; --aero-blur-panel: 8px; }
+  :root {
+    --aero-blur: 0px;
+    --aero-blur-panel: 0px;
+  }
 }
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   :root { --aero-transition: 0ms; }
 }

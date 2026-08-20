@@ -45,20 +45,44 @@ import GlitterDivider from '@/components/emo/GlitterDivider.vue'
 
 <style scoped>
 .emo-title {
-  font-family: "Times New Roman", Georgia, serif;
-  background: linear-gradient(to right, #FF6B00, #FF0000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 6px rgba(255,107,0,0.55)) drop-shadow(1px 1px 0 #000);
-  font-style: italic;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  color: #222222 !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: #222222 !important;
+  filter: none !important;
+  font-style: normal !important;
+  letter-spacing: 0 !important;
+  border-bottom: 2px solid #C000D8 !important;
+  padding-bottom: 4px !important;
 }
 .emo-body {
-  font-family: Verdana, Geneva, sans-serif;
-  color: #003366;
+  font-family: Verdana, Geneva, sans-serif !important;
+  font-size: 11px !important;
+  line-height: 1.5 !important;
+  color: #222222 !important;
+  text-transform: none !important;
 }
 .emo-link {
-  color: #0000FF;
-  text-decoration: underline;
+  color: #0000FF !important;
+  text-decoration: underline !important;
+  font-family: Verdana, sans-serif !important;
+  font-size: 11px !important;
 }
-.emo-link:hover { color: #FF00FF; }
+.emo-link:hover { color: #C000D8 !important; }
+
+/* Imagen — borde duro portal, sin sombra moderna */
+:deep(img) {
+  border: 2px solid #000000 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+
+/* Stickers — sin glow, sombra simple */
+:deep(.absolute) {
+  filter: none !important;
+}
 </style>

@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import AeroRain from '@/components/aero/AeroRain.vue'
-import AeroNavigation from '@/components/aero/AeroNavigation.vue'
+import { UiRain, UiNavigation } from '@/components/ui'
 import { currentComponent } from '@/router'
 import { useMood } from '@/composables/useMood'
 
@@ -8,14 +7,14 @@ useMood()
 </script>
 
 <template>
-  <AeroRain />
+  <UiRain />
   <main class="aero-layout__body">
     <aside class="aero-layout__texture" aria-hidden="true"></aside>
 
     <section class="aero-layout__content">
       <div class="relative z-10">
         <component :is="currentComponent" />
-        <AeroNavigation />
+        <UiNavigation />
       </div>
     </section>
 

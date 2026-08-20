@@ -2,7 +2,7 @@
 // audit-mood — verifica que cada CHAPTER_MOODS tenga CSS y que --aero-accent cambie por sección
 import { chromium } from 'playwright';
 
-const BASE = process.env.BASE_URL || 'http://127.0.0.1:5173/abrazame-webcore/';
+const BASE = process.env.BASE_URL || process.env.BASE || 'http://127.0.0.1:5173/abrazame-webcore/';
 
 const CHAPTERS = ['#/', '#/c1', '#/c2', '#/c3', '#/c4', '#/c5', '#/c6'];
 
@@ -32,12 +32,17 @@ async function main() {
     }
     // scroll to each section and check accent changes
     for (const sec of result.sections) {
-      const el = page.locator(`#${sec.id}`);
-      if (await el.count() > 0) {
-        await el.scrollIntoViewIfNeeded();
-        await page.waitForTimeout(650); // wait for 600ms transition
-        const accentAfter = await page.evaluate(() => getComputedStyle(document.documentElement).getPropertyValue('--aero-accent').trim());
-        console.log(`      scroll #${sec.id} -> accent ${accentAfter}`);
+      if (!sec.id || sec.id === '(no-id)') continue
+      const el = page.locator(`[id="${sec.id}"], [data-section-id="${sec.id}"]`)
+      try {
+        if (await el.count() > 0) {
+          await el.scrollIntoViewIfNeeded();
+          await page.waitForTimeout(650);
+          const accentAfter = await page.evaluate(() => getComputedStyle(document.documentElement).getPropertyValue('--aero-accent').trim());
+          console.log(`      scroll #${sec.id} -> accent ${accentAfter}`);
+        }
+      } catch (e) {
+        console.log(`      skip #${sec.id}: ${String(e).slice(0,80)}`)
       }
     }
     if (!result.mood || result.mood === '(none)') {
